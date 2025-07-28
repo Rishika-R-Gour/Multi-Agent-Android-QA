@@ -1,0 +1,1277 @@
+{
+  "results": [
+    {
+      "video_id": "aitw_001",
+      "task_prompt": "Test Gmail app: Compose and send email with attachment (Standard workflow with some UI challenges)",
+      "agent_steps": [
+        "Verify modal state for: Access email application",
+        "Execute: locate_email_app",
+        "Execute: launch_email",
+        "Verify completion of: Access email application",
+        "Verify modal state for: Access search functionality",
+        "Execute: locate_search",
+        "Execute: activate_search",
+        "Verify completion of: Access search functionality",
+        "Verify modal state for: Execute search query",
+        "Execute: enter_search_terms",
+        "Execute: execute_search",
+        "Execute: review_results",
+        "Verify completion of: Execute search query"
+      ],
+      "ground_truth_steps": [
+        "Launch Gmail app",
+        "Tap compose button",
+        "Enter recipient email",
+        "Add subject line",
+        "Type email body",
+        "Attach file",
+        "Send email"
+      ],
+      "execution_results": [
+        {
+          "step": {
+            "step_id": 9,
+            "subgoal_id": "email_001",
+            "action": "verify_modal_state",
+            "target": "home_screen",
+            "description": "Verify modal state for: Access email application",
+            "expected_result": "System in home_screen state",
+            "validation_criteria": [
+              "Current modal state is home_screen",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 11,
+            "subgoal_id": "email_001",
+            "action": "interact",
+            "target": "locate email app",
+            "description": "Execute: locate_email_app",
+            "expected_result": "Action 'locate_email_app' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 12,
+            "subgoal_id": "email_001",
+            "action": "interact",
+            "target": "launch email",
+            "description": "Execute: launch_email",
+            "expected_result": "Application launches successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "transition_to_email_app",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen",
+              "try_alternative_launch_method",
+              "check_app_availability"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 13,
+            "subgoal_id": "email_001",
+            "action": "verify_subgoal_completion",
+            "target": "email_app",
+            "description": "Verify completion of: Access email application",
+            "expected_result": "Subgoal achieved, system in email_app state",
+            "validation_criteria": [
+              "email_app_loaded",
+              "inbox_visible"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 19,
+            "subgoal_id": "email_002",
+            "action": "verify_modal_state",
+            "target": "email_app",
+            "description": "Verify modal state for: Access search functionality",
+            "expected_result": "System in email_app state",
+            "validation_criteria": [
+              "Current modal state is email_app",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 21,
+            "subgoal_id": "email_002",
+            "action": "locate",
+            "target": "Search button",
+            "description": "Execute: locate_search",
+            "expected_result": "Action 'locate_search' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 22,
+            "subgoal_id": "email_002",
+            "action": "interact",
+            "target": "activate search",
+            "description": "Execute: activate_search",
+            "expected_result": "Action 'activate_search' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        }
+      ],
+      "scores": {
+        "accuracy": 1.0,
+        "robustness": 0.7999999999999999,
+        "generalization": 0.8999999999999999,
+        "overall": 0.8999999999999999
+      },
+      "session_id": "session_20250728_161320_aitw_gmail",
+      "status": "completed"
+    },
+    {
+      "video_id": "aitw_002",
+      "task_prompt": "Test Settings app: Enable dark mode and adjust display brightness (Basic functionality test)",
+      "agent_steps": [
+        "Verify modal state for: Identify target application",
+        "Execute: analyze_goal",
+        "Execute: identify_target_app",
+        "Verify completion of: Identify target application",
+        "Verify modal state for: Access target functionality",
+        "Execute: launch_app",
+        "Execute: navigate_to_feature",
+        "Verify completion of: Access target functionality"
+      ],
+      "ground_truth_steps": [
+        "Open Settings app",
+        "Navigate to Display settings",
+        "Find dark mode option",
+        "Toggle dark mode on",
+        "Adjust brightness slider",
+        "Confirm changes"
+      ],
+      "execution_results": [
+        {
+          "step": {
+            "step_id": 9,
+            "subgoal_id": "generic_001",
+            "action": "verify_modal_state",
+            "target": "any",
+            "description": "Verify modal state for: Identify target application",
+            "expected_result": "System in any state",
+            "validation_criteria": [
+              "Current modal state is any",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 11,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "analyze goal",
+            "description": "Execute: analyze_goal",
+            "expected_result": "Action 'analyze_goal' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 12,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "identify target app",
+            "description": "Execute: identify_target_app",
+            "expected_result": "Action 'identify_target_app' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 13,
+            "subgoal_id": "generic_001",
+            "action": "verify_subgoal_completion",
+            "target": "app_identified",
+            "description": "Verify completion of: Identify target application",
+            "expected_result": "Subgoal achieved, system in app_identified state",
+            "validation_criteria": [
+              "target_app_known"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 19,
+            "subgoal_id": "generic_002",
+            "action": "verify_modal_state",
+            "target": "app_identified",
+            "description": "Verify modal state for: Access target functionality",
+            "expected_result": "System in app_identified state",
+            "validation_criteria": [
+              "Current modal state is app_identified",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 21,
+            "subgoal_id": "generic_002",
+            "action": "navigate",
+            "target": "launch app",
+            "description": "Execute: launch_app",
+            "expected_result": "Application launches successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "transition_to_functionality_accessed",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen",
+              "try_alternative_launch_method",
+              "check_app_availability"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        }
+      ],
+      "scores": {
+        "accuracy": 1.0,
+        "robustness": 0.7,
+        "generalization": 0.8999999999999999,
+        "overall": 0.8666666666666666
+      },
+      "session_id": "session_20250728_161321_aitw_settings",
+      "status": "completed"
+    },
+    {
+      "video_id": "aitw_003",
+      "task_prompt": "Test Camera app: Switch to video mode and record 10-second clip (Standard workflow with some UI challenges)",
+      "agent_steps": [
+        "Verify modal state for: Identify target application",
+        "Execute: analyze_goal",
+        "Execute: identify_target_app",
+        "Verify completion of: Identify target application",
+        "Verify modal state for: Access target functionality",
+        "Execute: launch_app",
+        "Execute: navigate_to_feature",
+        "Verify completion of: Access target functionality"
+      ],
+      "ground_truth_steps": [
+        "Launch Camera app",
+        "Grant camera permissions",
+        "Switch from photo to video mode",
+        "Set recording duration",
+        "Start recording",
+        "Stop recording",
+        "Save video to gallery"
+      ],
+      "execution_results": [
+        {
+          "step": {
+            "step_id": 9,
+            "subgoal_id": "generic_001",
+            "action": "verify_modal_state",
+            "target": "any",
+            "description": "Verify modal state for: Identify target application",
+            "expected_result": "System in any state",
+            "validation_criteria": [
+              "Current modal state is any",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 11,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "analyze goal",
+            "description": "Execute: analyze_goal",
+            "expected_result": "Action 'analyze_goal' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 12,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "identify target app",
+            "description": "Execute: identify_target_app",
+            "expected_result": "Action 'identify_target_app' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 13,
+            "subgoal_id": "generic_001",
+            "action": "verify_subgoal_completion",
+            "target": "app_identified",
+            "description": "Verify completion of: Identify target application",
+            "expected_result": "Subgoal achieved, system in app_identified state",
+            "validation_criteria": [
+              "target_app_known"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 19,
+            "subgoal_id": "generic_002",
+            "action": "verify_modal_state",
+            "target": "app_identified",
+            "description": "Verify modal state for: Access target functionality",
+            "expected_result": "System in app_identified state",
+            "validation_criteria": [
+              "Current modal state is app_identified",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 21,
+            "subgoal_id": "generic_002",
+            "action": "navigate",
+            "target": "launch app",
+            "description": "Execute: launch_app",
+            "expected_result": "Application launches successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "transition_to_functionality_accessed",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen",
+              "try_alternative_launch_method",
+              "check_app_availability"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 22,
+            "subgoal_id": "generic_002",
+            "action": "interact",
+            "target": "navigate to feature",
+            "description": "Execute: navigate_to_feature",
+            "expected_result": "Navigation successful, target screen visible",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "navigate_within_app_identified",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        }
+      ],
+      "scores": {
+        "accuracy": 1.0,
+        "robustness": 0.7999999999999999,
+        "generalization": 0.8999999999999999,
+        "overall": 0.8999999999999999
+      },
+      "session_id": "session_20250728_161321_aitw_camera",
+      "status": "completed"
+    },
+    {
+      "video_id": "aitw_004",
+      "task_prompt": "Test Maps app: Search for nearby restaurants and get directions (Complex multi-step workflow with edge cases)",
+      "agent_steps": [
+        "Verify modal state for: Identify target application",
+        "Execute: analyze_goal",
+        "Execute: identify_target_app",
+        "Verify completion of: Identify target application",
+        "Verify modal state for: Access target functionality",
+        "Execute: launch_app",
+        "Execute: navigate_to_feature",
+        "Verify completion of: Access target functionality"
+      ],
+      "ground_truth_steps": [
+        "Open Maps app",
+        "Grant location permissions",
+        "Search for 'restaurants near me'",
+        "Select restaurant from results",
+        "View restaurant details",
+        "Tap directions button",
+        "Choose navigation mode",
+        "Start navigation"
+      ],
+      "execution_results": [
+        {
+          "step": {
+            "step_id": 9,
+            "subgoal_id": "generic_001",
+            "action": "verify_modal_state",
+            "target": "any",
+            "description": "Verify modal state for: Identify target application",
+            "expected_result": "System in any state",
+            "validation_criteria": [
+              "Current modal state is any",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 11,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "analyze goal",
+            "description": "Execute: analyze_goal",
+            "expected_result": "Action 'analyze_goal' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 12,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "identify target app",
+            "description": "Execute: identify_target_app",
+            "expected_result": "Action 'identify_target_app' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 13,
+            "subgoal_id": "generic_001",
+            "action": "verify_subgoal_completion",
+            "target": "app_identified",
+            "description": "Verify completion of: Identify target application",
+            "expected_result": "Subgoal achieved, system in app_identified state",
+            "validation_criteria": [
+              "target_app_known"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 19,
+            "subgoal_id": "generic_002",
+            "action": "verify_modal_state",
+            "target": "app_identified",
+            "description": "Verify modal state for: Access target functionality",
+            "expected_result": "System in app_identified state",
+            "validation_criteria": [
+              "Current modal state is app_identified",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 21,
+            "subgoal_id": "generic_002",
+            "action": "navigate",
+            "target": "launch app",
+            "description": "Execute: launch_app",
+            "expected_result": "Application launches successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "transition_to_functionality_accessed",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen",
+              "try_alternative_launch_method",
+              "check_app_availability"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 22,
+            "subgoal_id": "generic_002",
+            "action": "interact",
+            "target": "navigate to feature",
+            "description": "Execute: navigate_to_feature",
+            "expected_result": "Navigation successful, target screen visible",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "navigate_within_app_identified",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 23,
+            "subgoal_id": "generic_002",
+            "action": "verify_subgoal_completion",
+            "target": "functionality_accessed",
+            "description": "Verify completion of: Access target functionality",
+            "expected_result": "Subgoal achieved, system in functionality_accessed state",
+            "validation_criteria": [
+              "feature_accessible"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        }
+      ],
+      "scores": {
+        "accuracy": 1.0,
+        "robustness": 0.8999999999999999,
+        "generalization": 0.8999999999999999,
+        "overall": 0.9333333333333332
+      },
+      "session_id": "session_20250728_161322_aitw_maps",
+      "status": "completed"
+    },
+    {
+      "video_id": "aitw_005",
+      "task_prompt": "Test Calendar app: Create recurring weekly meeting with notification reminder (Complex multi-step workflow with edge cases)",
+      "agent_steps": [
+        "Verify modal state for: Identify target application",
+        "Execute: analyze_goal",
+        "Execute: identify_target_app",
+        "Verify completion of: Identify target application",
+        "Verify modal state for: Access target functionality",
+        "Execute: launch_app",
+        "Execute: navigate_to_feature",
+        "Verify completion of: Access target functionality"
+      ],
+      "ground_truth_steps": [
+        "Launch Calendar app",
+        "Tap create event button",
+        "Enter event title",
+        "Set date and time",
+        "Configure recurring weekly",
+        "Add attendees",
+        "Set reminder notification",
+        "Save event"
+      ],
+      "execution_results": [
+        {
+          "step": {
+            "step_id": 9,
+            "subgoal_id": "generic_001",
+            "action": "verify_modal_state",
+            "target": "any",
+            "description": "Verify modal state for: Identify target application",
+            "expected_result": "System in any state",
+            "validation_criteria": [
+              "Current modal state is any",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 11,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "analyze goal",
+            "description": "Execute: analyze_goal",
+            "expected_result": "Action 'analyze_goal' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 12,
+            "subgoal_id": "generic_001",
+            "action": "interact",
+            "target": "identify target app",
+            "description": "Execute: identify_target_app",
+            "expected_result": "Action 'identify_target_app' completes successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": null,
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 13,
+            "subgoal_id": "generic_001",
+            "action": "verify_subgoal_completion",
+            "target": "app_identified",
+            "description": "Verify completion of: Identify target application",
+            "expected_result": "Subgoal achieved, system in app_identified state",
+            "validation_criteria": [
+              "target_app_known"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 19,
+            "subgoal_id": "generic_002",
+            "action": "verify_modal_state",
+            "target": "app_identified",
+            "description": "Verify modal state for: Access target functionality",
+            "expected_result": "System in app_identified state",
+            "validation_criteria": [
+              "Current modal state is app_identified",
+              "No blocking modals present",
+              "Required UI elements accessible"
+            ],
+            "modal_state_check": true,
+            "adaptation_point": true,
+            "fallback_actions": [
+              "dismiss_blocking_modals",
+              "navigate_to_required_state"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 21,
+            "subgoal_id": "generic_002",
+            "action": "navigate",
+            "target": "launch app",
+            "description": "Execute: launch_app",
+            "expected_result": "Application launches successfully",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "transition_to_functionality_accessed",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen",
+              "try_alternative_launch_method",
+              "check_app_availability"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 22,
+            "subgoal_id": "generic_002",
+            "action": "interact",
+            "target": "navigate to feature",
+            "description": "Execute: navigate_to_feature",
+            "expected_result": "Navigation successful, target screen visible",
+            "validation_criteria": [
+              "Action executes without error",
+              "UI responds appropriately"
+            ],
+            "modal_state_transition": "navigate_within_app_identified",
+            "adaptation_point": true,
+            "retry_strategy": {
+              "max_retries": 3,
+              "retry_delay": 1.0,
+              "retry_conditions": [
+                "element_not_found",
+                "action_failed",
+                "unexpected_modal"
+              ],
+              "retry_modifications": [
+                "increase_wait_time",
+                "retry_element_location",
+                "dismiss_popup"
+              ]
+            },
+            "fallback_actions": [
+              "wait_for_ui_stabilization",
+              "refresh_screen"
+            ]
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        },
+        {
+          "step": {
+            "step_id": 23,
+            "subgoal_id": "generic_002",
+            "action": "verify_subgoal_completion",
+            "target": "functionality_accessed",
+            "description": "Verify completion of: Access target functionality",
+            "expected_result": "Subgoal achieved, system in functionality_accessed state",
+            "validation_criteria": [
+              "feature_accessible"
+            ],
+            "modal_state_check": true,
+            "completion_verification": true
+          },
+          "success": true,
+          "ground_truth_alignment": 0.0,
+          "execution_mode": "simulation"
+        }
+      ],
+      "scores": {
+        "accuracy": 1.0,
+        "robustness": 0.8999999999999999,
+        "generalization": 0.8999999999999999,
+        "overall": 0.9333333333333332
+      },
+      "session_id": "session_20250728_161323_aitw_calendar",
+      "status": "completed"
+    }
+  ],
+  "summary": {
+    "videos_processed": 5,
+    "execution_mode": "simulation",
+    "average_accuracy": 1.0,
+    "average_robustness": 0.82,
+    "average_generalization": 0.9,
+    "overall_performance": 0.9066666666666666,
+    "complexity_breakdown": {
+      "medium": [
+        0.8999999999999999,
+        0.8999999999999999
+      ],
+      "low": [
+        0.8666666666666666
+      ],
+      "high": [
+        0.9333333333333332,
+        0.9333333333333332
+      ]
+    }
+  },
+  "timestamp": "2025-07-28T16:13:23.842156"
+}
