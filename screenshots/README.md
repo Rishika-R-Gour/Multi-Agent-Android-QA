@@ -1,6 +1,10 @@
-# 📸 Screenshots Directory
+# 📸 Screenshots Documentation
 
-## 🎯 Key Screenshots (Quick Access)
+## 🎯 Visual Evidence of Multi-Agent Android QA Framework
+
+This directory contains captured screenshots demonstrating the automated testing capabilities of our multi-agent Android QA system.
+
+### 📁 Quick Access - Key Screenshots
 
 ### 🏆 Essential Test Evidence
 - **key_wifi_initial_status.png** - Initial WiFi status verification (baseline)
