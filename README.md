@@ -17,7 +17,7 @@ A complete multi-agent LLM-powered QA system for Android testing with real devic
 | ![Android Studio](screenshots/key_android_studio_demo.png) | ![WiFi Success](screenshots/key_wifi_enabled.png) | ![Device Control](screenshots/organized/latest_wifi_test/wifi_test_stress_test_final_20250729_120342.png) |
 | Real Android Studio Integration | 100% WiFi Test Success | Automated Device Control |
 
-** Fully Automated • Real Devices • 90.7% Success Rate • 19s Execution**
+Fully Automated • Real Devices • 90.7% Success Rate • 19s Execution
 
 </div>
 
