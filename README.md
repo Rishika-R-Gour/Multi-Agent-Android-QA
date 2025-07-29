@@ -17,7 +17,7 @@ A complete multi-agent LLM-powered QA system for Android testing with real devic
 | ![Android Studio](screenshots/key_android_studio_demo.png) | ![WiFi Success](screenshots/key_wifi_enabled.png) | ![Device Control](screenshots/organized/latest_wifi_test/wifi_test_stress_test_final_20250729_120342.png) |
 | Real Android Studio Integration | 100% WiFi Test Success | Automated Device Control |
 
-**🚀 Fully Automated • 📱 Real Devices • 🎯 90.7% Success Rate • ⚡ 19s Execution**
+** Fully Automated • Real Devices • 90.7% Success Rate • 19s Execution**
 
 </div>
 
@@ -148,7 +148,7 @@ python evaluation_report_generator.py
 - **Reports**: `reports/` directory (JSON + Markdown)
 - **Documentation**: `docs/` directory
 
-### 🚀 Key Achievements Demonstrated
+### Key Achievements Demonstrated
 
 - **Real Device Automation**: Android Studio emulator control
 - **100% WiFi Testing Success**: All scenarios pass consistently  
@@ -208,7 +208,7 @@ python evaluation_report_generator.py
 - State persistence verification
 - Stress testing scenarios
 
-## 📱 Device Compatibility
+## Device Compatibility
 
 **Tested Environments:**
 - Android Studio Pixel 6 Emulator (Android 13)
