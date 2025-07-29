@@ -83,4 +83,3 @@ python tests/run_qa_flow.py --task settings_wifi
 - Achieves 90.7% performance (Grade A)
 - Ready for enterprise use
 
-**Everything works. Everything is documented. Everything is ready for portfolio/GitHub showcase.**
