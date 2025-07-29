@@ -1,0 +1,692 @@
+{
+  "report_id": "qa_report_1753803814",
+  "timestamp": 1753803814.153949,
+  "goal": "Android Studio emulator WiFi testing",
+  "task_name": "settings_wifi",
+  "environment": {
+    "real_device_used": true,
+    "android_env_status": "active"
+  },
+  "planning_summary": {
+    "plan_id": "adaptive_plan_settings_wifi_1",
+    "total_steps_planned": 19,
+    "estimated_duration": 475
+  },
+  "execution_summary": {
+    "actual_duration": 19.094671964645386,
+    "steps_executed": 19,
+    "overall_status": "success"
+  },
+  "verification_summary": {
+    "total_steps": 19,
+    "successful_steps": 14,
+    "success_rate": 0.7368421052631579,
+    "failed_steps": 5
+  },
+  "detailed_results": {
+    "step_by_step": [
+      {
+        "step_number": 9,
+        "description": "Verify modal state for: Navigate to WiFi settings",
+        "execution_status": "success",
+        "execution_duration": 1.0057520866394043,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Current modal state is home_screen",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "No blocking modals present",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Required UI elements accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 11,
+        "description": "Execute: launch_settings",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.0016350746154785,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Settings menu visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "Options are clickable",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Settings menu visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 12,
+        "description": "Execute: navigate_to_network",
+        "execution_status": "success",
+        "execution_duration": 1.005587100982666,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 13,
+        "description": "Verify completion of: Navigate to WiFi settings",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.0067720413208008,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "settings_app_visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "network_section_accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "settings_app_visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 19,
+        "description": "Verify modal state for: Access WiFi configuration",
+        "execution_status": "success",
+        "execution_duration": 1.0062589645385742,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Current modal state is settings_network",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "No blocking modals present",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Required UI elements accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 21,
+        "description": "Execute: tap_wifi_option",
+        "execution_status": "success",
+        "execution_duration": 1.005706787109375,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Wi-Fi interface accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Network status updates",
+            "passed": true,
+            "details": {
+              "expected": "unknown",
+              "actual": "unknown"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 22,
+        "description": "Execute: verify_wifi_screen",
+        "execution_status": "success",
+        "execution_duration": 1.005497694015503,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Wi-Fi interface accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Network status updates",
+            "passed": true,
+            "details": {
+              "expected": "unknown",
+              "actual": "unknown"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 23,
+        "description": "Verify completion of: Access WiFi configuration",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.006762981414795,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "wifi_toggle_visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "wifi_list_available",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "wifi_toggle_visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 29,
+        "description": "Verify modal state for: Test WiFi toggle functionality",
+        "execution_status": "success",
+        "execution_duration": 1.006591796875,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Current modal state is wifi_settings",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "No blocking modals present",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Required UI elements accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 31,
+        "description": "Execute: toggle_wifi_on",
+        "execution_status": "success",
+        "execution_duration": 1.003040075302124,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Wi-Fi interface accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Network status updates",
+            "passed": true,
+            "details": {
+              "expected": "unknown",
+              "actual": "unknown"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 32,
+        "description": "Execute: verify_activation",
+        "execution_status": "success",
+        "execution_duration": 1.0059778690338135,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 33,
+        "description": "Execute: toggle_wifi_off",
+        "execution_status": "success",
+        "execution_duration": 1.0020809173583984,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Wi-Fi interface accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Network status updates",
+            "passed": true,
+            "details": {
+              "expected": "unknown",
+              "actual": "unknown"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 34,
+        "description": "Execute: verify_deactivation",
+        "execution_status": "success",
+        "execution_duration": 1.0085599422454834,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 35,
+        "description": "Verify completion of: Test WiFi toggle functionality",
+        "execution_status": "success",
+        "execution_duration": 1.0015370845794678,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "wifi_status_changes",
+            "passed": true,
+            "details": {
+              "expected": "unknown",
+              "actual": "unknown"
+            }
+          },
+          {
+            "criterion": "network_list_updates",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "connectivity_reflects_state",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 39,
+        "description": "Verify modal state for: Verify state persistence",
+        "execution_status": "success",
+        "execution_duration": 1.0064289569854736,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Current modal state is wifi_settings",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "No blocking modals present",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Required UI elements accessible",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 41,
+        "description": "Execute: exit_settings",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.005897045135498,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Settings menu visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "Options are clickable",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Settings menu visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 42,
+        "description": "Execute: re_enter_settings",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.0022692680358887,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "Settings menu visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "Options are clickable",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Settings menu visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 43,
+        "description": "Execute: verify_state_maintained",
+        "execution_status": "success",
+        "execution_duration": 1.0057151317596436,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Action executes without error",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "UI responds appropriately",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      },
+      {
+        "step_number": 44,
+        "description": "Verify completion of: Verify state persistence",
+        "execution_status": "success",
+        "execution_duration": 1.0018928050994873,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "state_persisted",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          },
+          {
+            "criterion": "ui_consistent",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "category": "execution_improvements",
+      "priority": "high",
+      "description": "5 steps failed execution. Review error details and environment setup."
+    },
+    {
+      "category": "validation_improvements",
+      "priority": "medium",
+      "description": "5 validation criteria failed. Review test assertions."
+    },
+    {
+      "category": "test_reliability",
+      "priority": "high",
+      "description": "Success rate below 80%. Consider improving test stability and environment setup."
+    }
+  ],
+  "legacy_summary": "FAIL"
+}

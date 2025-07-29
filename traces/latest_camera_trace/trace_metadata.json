@@ -1,0 +1,206 @@
+{
+  "trace_id": "trace_20250728_154359_camera_photo",
+  "test_goal": "Test camera app photo capture functionality",
+  "task_name": "camera_photo",
+  "start_time": 1753731839.9967701,
+  "frames": [],
+  "agent_actions": [],
+  "ui_states": [
+    {
+      "timestamp": 1753731840.611137,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    },
+    {
+      "timestamp": 1753731841.02496,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    },
+    {
+      "timestamp": 1753731841.4336472,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    },
+    {
+      "timestamp": 1753731841.836468,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    },
+    {
+      "timestamp": 1753731842.245945,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    }
+  ],
+  "metadata": {
+    "trace_path": "traces/trace_20250728_154359_camera_photo",
+    "frame_count": 0,
+    "total_duration": 2.658632755279541
+  },
+  "end_time": 1753731842.655403
+}

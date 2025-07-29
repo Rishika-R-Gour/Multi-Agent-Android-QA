@@ -1,4 +1,8 @@
 # QualGent Multi-Agent QA System Dependencies
+# 
+# NOTE: This file contains core dependencies only.
+# External frameworks (Agent-S, Android World) must be installed separately.
+# See README.md for complete installation instructions.
 
 # Core dependencies
 opencv-python>=4.8.0

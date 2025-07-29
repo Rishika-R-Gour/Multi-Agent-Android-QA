@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QA Visual Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background: #f0f0f0; padding: 20px; border-radius: 5px; }
+        .metric { display: inline-block; margin: 10px; padding: 10px; background: #e8f4fd; border-radius: 3px; }
+        .frame { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        .status-pass { color: green; font-weight: bold; }
+        .status-fail { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>QA Visual Test Report</h1>
+        <p><strong>Test Goal:</strong> Set an alarm for 7:00 AM</p>
+        <p><strong>Overall Result:</strong> 
+           <span class="status-fail">FAIL</span></p>
+        <p><strong>Session ID:</strong> session_20250728_153340_alarm_setting</p>
+    </div>
+    
+    <h2>Performance Metrics</h2>
+    <div class="metrics">
+<div class="metric">Bug Detection Accuracy: 0.00</div><div class="metric">Agent Recovery Ability: 0.00</div><div class="metric">Test Efficiency: 0.50</div><div class="metric">Coverage Completeness: 16.67</div>
+    </div>
+    
+    <h2>Visual Trace</h2>
+    <p>Screenshots and UI states captured during test execution would be displayed here.</p>
+    
+    <h2>Test Steps</h2>
+<div class="frame">1. <span class="status-fail">FAIL</span> - Verify modal state for: Launch clock application</div><div class="frame">2. <span class="status-fail">FAIL</span> - Execute: find_clock_app</div><div class="frame">3. <span class="status-fail">FAIL</span> - Execute: launch_app</div><div class="frame">4. <span class="status-fail">FAIL</span> - Verify completion of: Launch clock application</div><div class="frame">5. <span class="status-fail">FAIL</span> - Verify modal state for: Navigate to alarm section</div><div class="frame">6. <span class="status-fail">FAIL</span> - Execute: locate_alarm_tab</div><div class="frame">7. <span class="status-fail">FAIL</span> - Execute: switch_to_alarms</div><div class="frame">8. <span class="status-fail">FAIL</span> - Verify completion of: Navigate to alarm section</div><div class="frame">9. <span class="status-fail">FAIL</span> - Verify modal state for: Create and configure alarm</div><div class="frame">10. <span class="status-fail">FAIL</span> - Execute: tap_add_alarm</div><div class="frame">11. <span class="status-fail">FAIL</span> - Execute: set_time</div><div class="frame">12. <span class="status-fail">FAIL</span> - Execute: configure_options</div><div class="frame">13. <span class="status-fail">FAIL</span> - Execute: save_alarm</div><div class="frame">14. <span class="status-fail">FAIL</span> - Verify completion of: Create and configure alarm</div><div class="frame">15. <span class="status-fail">FAIL</span> - Verify modal state for: Test alarm activation/deactivation</div><div class="frame">16. <span class="status-fail">FAIL</span> - Execute: toggle_alarm_on</div><div class="frame">17. <span class="status-fail">FAIL</span> - Execute: verify_active</div><div class="frame">18. <span class="status-fail">FAIL</span> - Execute: toggle_alarm_off</div><div class="frame">19. <span class="status-fail">FAIL</span> - Execute: verify_inactive</div><div class="frame">20. <span class="status-fail">FAIL</span> - Verify completion of: Test alarm activation/deactivation</div>
+</body>
+</html>

@@ -1,0 +1,1680 @@
+{
+  "trace_id": "trace_20250728_152342_settings_wifi",
+  "test_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+  "task_name": "settings_wifi",
+  "start_time": 1753730622.9345138,
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp": 1753730623.550688,
+      "file_path": "traces/trace_20250728_152342_settings_wifi/frame_0000.png",
+      "ui_element_count": 2,
+      "dimensions": null
+    }
+  ],
+  "agent_actions": [
+    {
+      "timestamp": 1753730624.3390799,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 9,
+          "subgoal_id": "wifi_001",
+          "action": "verify_modal_state",
+          "target": "home_screen",
+          "description": "Verify modal state for: Navigate to WiFi settings",
+          "expected_result": "System in home_screen state",
+          "validation_criteria": [
+            "Current modal state is home_screen",
+            "No blocking modals present",
+            "Required UI elements accessible"
+          ],
+          "modal_state_check": true,
+          "adaptation_point": true,
+          "fallback_actions": [
+            "dismiss_blocking_modals",
+            "navigate_to_required_state"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "home_screen",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "home_screen",
+          "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730624.948699,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 11,
+          "subgoal_id": "wifi_001",
+          "action": "navigate",
+          "target": "Settings app",
+          "description": "Execute: launch_settings",
+          "expected_result": "Application launches successfully",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Settings menu visible",
+            "Options are clickable"
+          ],
+          "modal_state_transition": "transition_to_settings_app",
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen",
+            "try_alternative_launch_method",
+            "check_app_availability"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "navigate",
+        "target": "Settings app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "navigate",
+          "target": "Settings app",
+          "message": "Mock execution of navigate on Settings app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730625.556098,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 12,
+          "subgoal_id": "wifi_001",
+          "action": "tap",
+          "target": "Network & internet",
+          "description": "Execute: navigate_to_network",
+          "expected_result": "Navigation successful, target screen visible",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately"
+          ],
+          "modal_state_transition": "navigate_within_home_screen",
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "tap",
+        "target": "Network & internet",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "tap",
+          "target": "Network & internet",
+          "message": "Mock execution of tap on Network & internet completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730626.16142,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 13,
+          "subgoal_id": "wifi_001",
+          "action": "verify_subgoal_completion",
+          "target": "settings_app",
+          "description": "Verify completion of: Navigate to WiFi settings",
+          "expected_result": "Subgoal achieved, system in settings_app state",
+          "validation_criteria": [
+            "settings_app_visible",
+            "network_section_accessible"
+          ],
+          "modal_state_check": true,
+          "completion_verification": true
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "settings_app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "settings_app",
+          "message": "Mock execution of verify_subgoal_completion on settings_app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730626.769094,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 19,
+          "subgoal_id": "wifi_002",
+          "action": "verify_modal_state",
+          "target": "settings_network",
+          "description": "Verify modal state for: Access WiFi configuration",
+          "expected_result": "System in settings_network state",
+          "validation_criteria": [
+            "Current modal state is settings_network",
+            "No blocking modals present",
+            "Required UI elements accessible"
+          ],
+          "modal_state_check": true,
+          "adaptation_point": true,
+          "fallback_actions": [
+            "dismiss_blocking_modals",
+            "navigate_to_required_state"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "settings_network",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "settings_network",
+          "message": "Mock execution of verify_modal_state on settings_network completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730627.377571,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 21,
+          "subgoal_id": "wifi_002",
+          "action": "tap",
+          "target": "Wi-Fi",
+          "description": "Execute: tap_wifi_option",
+          "expected_result": "Navigation successful, target screen visible",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Wi-Fi interface accessible",
+            "Network status updates"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen",
+            "try_different_coordinates",
+            "use_accessibility_tap"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "tap",
+        "target": "Wi-Fi",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "tap",
+          "target": "Wi-Fi",
+          "message": "Mock execution of tap on Wi-Fi completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730627.985466,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 22,
+          "subgoal_id": "wifi_002",
+          "action": "interact",
+          "target": "verify wifi screen",
+          "description": "Execute: verify_wifi_screen",
+          "expected_result": "Verification passes, state confirmed",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Wi-Fi interface accessible",
+            "Network status updates"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify wifi screen",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify wifi screen",
+          "message": "Mock execution of interact on verify wifi screen completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730628.5933251,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 23,
+          "subgoal_id": "wifi_002",
+          "action": "verify_subgoal_completion",
+          "target": "wifi_settings",
+          "description": "Verify completion of: Access WiFi configuration",
+          "expected_result": "Subgoal achieved, system in wifi_settings state",
+          "validation_criteria": [
+            "wifi_toggle_visible",
+            "wifi_list_available"
+          ],
+          "modal_state_check": true,
+          "completion_verification": true
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "wifi_settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "wifi_settings",
+          "message": "Mock execution of verify_subgoal_completion on wifi_settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730629.200151,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 29,
+          "subgoal_id": "wifi_003",
+          "action": "verify_modal_state",
+          "target": "wifi_settings",
+          "description": "Verify modal state for: Test WiFi toggle functionality",
+          "expected_result": "System in wifi_settings state",
+          "validation_criteria": [
+            "Current modal state is wifi_settings",
+            "No blocking modals present",
+            "Required UI elements accessible"
+          ],
+          "modal_state_check": true,
+          "adaptation_point": true,
+          "fallback_actions": [
+            "dismiss_blocking_modals",
+            "navigate_to_required_state"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "wifi_settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "wifi_settings",
+          "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730629.810997,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 31,
+          "subgoal_id": "wifi_003",
+          "action": "toggle",
+          "target": "Wi-Fi toggle",
+          "description": "Execute: toggle_wifi_on",
+          "expected_result": "Toggle state changes as expected",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Wi-Fi interface accessible",
+            "Network status updates"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen",
+            "long_press_toggle",
+            "use_menu_option"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "toggle",
+        "target": "Wi-Fi toggle",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "toggle",
+          "target": "Wi-Fi toggle",
+          "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730630.415658,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 32,
+          "subgoal_id": "wifi_003",
+          "action": "verify",
+          "target": "verify activation",
+          "description": "Execute: verify_activation",
+          "expected_result": "Verification passes, state confirmed",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify",
+        "target": "verify activation",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify",
+          "target": "verify activation",
+          "message": "Mock execution of verify on verify activation completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730631.023381,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 33,
+          "subgoal_id": "wifi_003",
+          "action": "toggle",
+          "target": "Wi-Fi toggle",
+          "description": "Execute: toggle_wifi_off",
+          "expected_result": "Toggle state changes as expected",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Wi-Fi interface accessible",
+            "Network status updates"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen",
+            "long_press_toggle",
+            "use_menu_option"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "toggle",
+        "target": "Wi-Fi toggle",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "toggle",
+          "target": "Wi-Fi toggle",
+          "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730631.626594,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 34,
+          "subgoal_id": "wifi_003",
+          "action": "interact",
+          "target": "verify deactivation",
+          "description": "Execute: verify_deactivation",
+          "expected_result": "Verification passes, state confirmed",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify deactivation",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify deactivation",
+          "message": "Mock execution of interact on verify deactivation completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730632.236984,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 35,
+          "subgoal_id": "wifi_003",
+          "action": "verify_subgoal_completion",
+          "target": "wifi_settings_active",
+          "description": "Verify completion of: Test WiFi toggle functionality",
+          "expected_result": "Subgoal achieved, system in wifi_settings_active state",
+          "validation_criteria": [
+            "wifi_status_changes",
+            "network_list_updates",
+            "connectivity_reflects_state"
+          ],
+          "modal_state_check": true,
+          "completion_verification": true
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "wifi_settings_active",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "wifi_settings_active",
+          "message": "Mock execution of verify_subgoal_completion on wifi_settings_active completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730632.8413608,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 39,
+          "subgoal_id": "wifi_004",
+          "action": "verify_modal_state",
+          "target": "wifi_settings",
+          "description": "Verify modal state for: Verify state persistence",
+          "expected_result": "System in wifi_settings state",
+          "validation_criteria": [
+            "Current modal state is wifi_settings",
+            "No blocking modals present",
+            "Required UI elements accessible"
+          ],
+          "modal_state_check": true,
+          "adaptation_point": true,
+          "fallback_actions": [
+            "dismiss_blocking_modals",
+            "navigate_to_required_state"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "wifi_settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "wifi_settings",
+          "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730633.449528,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 41,
+          "subgoal_id": "wifi_004",
+          "action": "interact",
+          "target": "exit settings",
+          "description": "Execute: exit_settings",
+          "expected_result": "Action 'exit_settings' completes successfully",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Settings menu visible",
+            "Options are clickable"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "exit settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "exit settings",
+          "message": "Mock execution of interact on exit settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730634.0588539,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 42,
+          "subgoal_id": "wifi_004",
+          "action": "interact",
+          "target": "re enter settings",
+          "description": "Execute: re_enter_settings",
+          "expected_result": "Action 're_enter_settings' completes successfully",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately",
+            "Settings menu visible",
+            "Options are clickable"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "re enter settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "re enter settings",
+          "message": "Mock execution of interact on re enter settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730634.666552,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 43,
+          "subgoal_id": "wifi_004",
+          "action": "interact",
+          "target": "verify state maintained",
+          "description": "Execute: verify_state_maintained",
+          "expected_result": "Verification passes, state confirmed",
+          "validation_criteria": [
+            "Action executes without error",
+            "UI responds appropriately"
+          ],
+          "modal_state_transition": null,
+          "adaptation_point": true,
+          "retry_strategy": {
+            "max_retries": 3,
+            "retry_delay": 1.0,
+            "retry_conditions": [
+              "element_not_found",
+              "action_failed",
+              "unexpected_modal"
+            ],
+            "retry_modifications": [
+              "increase_wait_time",
+              "retry_element_location",
+              "dismiss_popup"
+            ]
+          },
+          "fallback_actions": [
+            "wait_for_ui_stabilization",
+            "refresh_screen"
+          ]
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify state maintained",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify state maintained",
+          "message": "Mock execution of interact on verify state maintained completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730635.276478,
+      "agent": "ExecutorAgent",
+      "action": {
+        "agent": "ExecutorAgent",
+        "step": {
+          "step_id": 44,
+          "subgoal_id": "wifi_004",
+          "action": "verify_subgoal_completion",
+          "target": "verified_state",
+          "description": "Verify completion of: Verify state persistence",
+          "expected_result": "Subgoal achieved, system in verified_state state",
+          "validation_criteria": [
+            "state_persisted",
+            "ui_consistent"
+          ],
+          "modal_state_check": true,
+          "completion_verification": true
+        }
+      },
+      "result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "verified_state",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "verified_state",
+          "message": "Mock execution of verify_subgoal_completion on verified_state completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "frame_id": 1
+    }
+  ],
+  "ui_states": [
+    {
+      "timestamp": 1753730623.5507042,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730624.339078,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730624.9486878,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730625.55609,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730626.161411,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730626.769084,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730627.377564,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730627.9854589,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730628.5933151,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730629.200091,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730629.810993,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730630.415651,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730631.023376,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730631.6265888,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730632.2369761,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730632.841354,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730633.4495208,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730634.058848,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730634.666514,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730635.276472,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    }
+  ],
+  "metadata": {
+    "trace_path": "traces/trace_20250728_152342_settings_wifi",
+    "frame_count": 1,
+    "total_duration": 12.847735166549683
+  },
+  "end_time": 1753730635.782249
+}

@@ -1,0 +1,27 @@
+{
+    "test_goal": "Test Wi-Fi toggle functionality in Android settings",
+    "overall_status": "FAIL",
+    "steps": [
+        {
+            "step": "Open Android Settings from the home screen",
+            "result": "passed"
+        },
+        {
+            "step": "Navigate to Network & internet section",
+            "result": "passed"
+        },
+        {
+            "step": "Enter Wi-Fi settings",
+            "result": "passed"
+        },
+        {
+            "step": "Toggle Wi-Fi ON and verify connection",
+            "result": "passed"
+        },
+        {
+            "step": "Toggle Wi-Fi OFF and verify disconnection",
+            "result": "passed"
+        }
+    ],
+    "timestamp": "2025-07-28_14-32-48"
+}

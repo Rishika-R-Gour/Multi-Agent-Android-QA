@@ -1,0 +1,182 @@
+{
+  "test_session": {
+    "start_time": "2025-07-29T12:01:49.479693",
+    "test_type": "Automated WiFi Toggle Testing",
+    "device": "Pixel 6 Emulator (Android 13)"
+  },
+  "scenarios": [
+    {
+      "scenario_name": "Initial WiFi Status Check",
+      "goal": "Check current WiFi status and capture baseline screenshot",
+      "duration_seconds": 19.09,
+      "plan": {
+        "type": "hardware_fallback",
+        "goal": "Check current WiFi status and capture baseline screenshot"
+      },
+      "execution": {
+        "method": "direct_adb",
+        "status": "completed"
+      },
+      "verification": {
+        "wifi_status": "enabled",
+        "screenshot_captured": true
+      },
+      "evaluation": {
+        "overall_success": true,
+        "method": "hardware_validation"
+      },
+      "success": true,
+      "timestamp": "2025-07-29T12:02:09.664952",
+      "note": "Executed via direct hardware control (fallback mode)"
+    },
+    {
+      "scenario_name": "WiFi Disable Test",
+      "goal": "Disable WiFi and verify it's turned off with UI validation",
+      "duration_seconds": 19.13,
+      "plan": {
+        "type": "hardware_fallback",
+        "goal": "Disable WiFi and verify it's turned off with UI validation"
+      },
+      "execution": {
+        "method": "direct_adb",
+        "status": "completed"
+      },
+      "verification": {
+        "wifi_status": "disabled",
+        "screenshot_captured": true
+      },
+      "evaluation": {
+        "overall_success": true,
+        "method": "hardware_validation"
+      },
+      "success": true,
+      "timestamp": "2025-07-29T12:02:31.828828",
+      "note": "Executed via direct hardware control (fallback mode)"
+    },
+    {
+      "scenario_name": "WiFi Enable Test",
+      "goal": "Enable WiFi and verify it's turned on with UI validation",
+      "duration_seconds": 19.09,
+      "plan": {
+        "type": "hardware_fallback",
+        "goal": "Enable WiFi and verify it's turned on with UI validation"
+      },
+      "execution": {
+        "method": "direct_adb",
+        "status": "completed"
+      },
+      "verification": {
+        "wifi_status": "enabled",
+        "screenshot_captured": true
+      },
+      "evaluation": {
+        "overall_success": true,
+        "method": "hardware_validation"
+      },
+      "success": true,
+      "timestamp": "2025-07-29T12:02:54.480760",
+      "note": "Executed via direct hardware control (fallback mode)"
+    },
+    {
+      "scenario_name": "Airplane Mode Integration Test",
+      "goal": "Test airplane mode toggle and WiFi interaction",
+      "duration_seconds": 19.1,
+      "plan": {
+        "type": "hardware_fallback",
+        "goal": "Test airplane mode toggle and WiFi interaction"
+      },
+      "execution": {
+        "method": "direct_adb",
+        "status": "completed"
+      },
+      "verification": {
+        "wifi_status": "enabled",
+        "screenshot_captured": true
+      },
+      "evaluation": {
+        "overall_success": true,
+        "method": "hardware_validation"
+      },
+      "success": true,
+      "timestamp": "2025-07-29T12:03:23.254962",
+      "note": "Executed via direct hardware control (fallback mode)"
+    },
+    {
+      "scenario_name": "Rapid Toggle Stress Test",
+      "goal": "Perform rapid WiFi toggles to test system stability",
+      "duration_seconds": 19.09,
+      "plan": {
+        "type": "hardware_fallback",
+        "goal": "Perform rapid WiFi toggles to test system stability"
+      },
+      "execution": {
+        "method": "direct_adb",
+        "status": "completed"
+      },
+      "verification": {
+        "wifi_status": "enabled",
+        "screenshot_captured": true
+      },
+      "evaluation": {
+        "overall_success": true,
+        "method": "hardware_validation"
+      },
+      "success": true,
+      "timestamp": "2025-07-29T12:04:02.392578",
+      "note": "Executed via direct hardware control (fallback mode)"
+    }
+  ],
+  "screenshots": [
+    {
+      "scenario": "initial_status",
+      "filename": "wifi_test_initial_status_20250729_120149.png",
+      "timestamp": "20250729_120149",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_initial_status_20250729_120149.png"
+    },
+    {
+      "scenario": "wifi_disabled",
+      "filename": "wifi_test_wifi_disabled_20250729_120212.png",
+      "timestamp": "20250729_120212",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_wifi_disabled_20250729_120212.png"
+    },
+    {
+      "scenario": "wifi_enabled",
+      "filename": "wifi_test_wifi_enabled_20250729_120234.png",
+      "timestamp": "20250729_120234",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_wifi_enabled_20250729_120234.png"
+    },
+    {
+      "scenario": "airplane_mode_on",
+      "filename": "wifi_test_airplane_mode_on_20250729_120256.png",
+      "timestamp": "20250729_120256",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_airplane_mode_on_20250729_120256.png"
+    },
+    {
+      "scenario": "airplane_mode_off",
+      "filename": "wifi_test_airplane_mode_off_20250729_120300.png",
+      "timestamp": "20250729_120300",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_airplane_mode_off_20250729_120300.png"
+    },
+    {
+      "scenario": "stress_test_final",
+      "filename": "wifi_test_stress_test_final_20250729_120342.png",
+      "timestamp": "20250729_120342",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_stress_test_final_20250729_120342.png"
+    }
+  ],
+  "performance_metrics": {
+    "total_test_duration": 132.91,
+    "scenarios_completed": 5,
+    "screenshots_captured": 6,
+    "success_rate": 100.0,
+    "average_scenario_duration": 19.1
+  },
+  "summary": {
+    "test_completion_time": "2025-07-29T12:04:02.392766",
+    "total_scenarios": 5,
+    "successful_scenarios": 5,
+    "failed_scenarios": 0,
+    "final_wifi_status": "enabled",
+    "test_status": "COMPLETED SUCCESSFULLY"
+  }
+}

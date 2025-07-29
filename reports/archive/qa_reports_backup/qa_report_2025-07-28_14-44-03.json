@@ -1,0 +1,83 @@
+{
+    "test_goal": "Test turning Wi-Fi on and off",
+    "overall_status": "FAIL",
+    "steps": [
+        {
+            "step": "Verify modal state for: Navigate to WiFi settings",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: launch_settings",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: navigate_to_network",
+            "result": "passed"
+        },
+        {
+            "step": "Verify completion of: Navigate to WiFi settings",
+            "result": "passed"
+        },
+        {
+            "step": "Verify modal state for: Access WiFi configuration",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: tap_wifi_option",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: verify_wifi_screen",
+            "result": "passed"
+        },
+        {
+            "step": "Verify completion of: Access WiFi configuration",
+            "result": "passed"
+        },
+        {
+            "step": "Verify modal state for: Test WiFi toggle functionality",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: toggle_wifi_on",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: verify_activation",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: toggle_wifi_off",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: verify_deactivation",
+            "result": "passed"
+        },
+        {
+            "step": "Verify completion of: Test WiFi toggle functionality",
+            "result": "passed"
+        },
+        {
+            "step": "Verify modal state for: Verify state persistence",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: exit_settings",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: re_enter_settings",
+            "result": "passed"
+        },
+        {
+            "step": "Execute: verify_state_maintained",
+            "result": "passed"
+        },
+        {
+            "step": "Verify completion of: Verify state persistence",
+            "result": "passed"
+        }
+    ],
+    "timestamp": "2025-07-28_14-44-03"
+}

@@ -46,9 +46,9 @@ Thumbs.db
 *.temp
 *.log
 
-# Agent-S and android_world repositories (keep our integration files only)
-Agent-S/.git/
-android_world/.git/
+# External Dependencies (keep local, exclude from repo)
+Agent-S/
+android_world/
 
 # Keep only latest evaluation reports, exclude older ones
 # Allow the latest reports through

@@ -1,0 +1,218 @@
+{
+  "report_id": "qa_report_1753727609",
+  "timestamp": 1753727609.3649979,
+  "goal": "Test turning Wi-Fi on and off in Android settings",
+  "task_name": "settings_wifi",
+  "environment": {
+    "real_device_used": false,
+    "android_env_status": "active"
+  },
+  "planning_summary": {
+    "plan_id": "plan_settings_wifi_1",
+    "total_steps_planned": 5,
+    "estimated_duration": 150
+  },
+  "execution_summary": {
+    "actual_duration": 9.518069744110107,
+    "steps_executed": 5,
+    "overall_status": "success"
+  },
+  "verification_summary": {
+    "total_steps": 5,
+    "successful_steps": 1,
+    "success_rate": 0.2,
+    "failed_steps": 4
+  },
+  "detailed_results": {
+    "step_by_step": [
+      {
+        "step_number": 1,
+        "description": "Open Android Settings from the home screen",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.6858880519866943,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Settings title visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "Menu options displayed",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Settings title visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 2,
+        "description": "Navigate to Network & internet section",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.6360421180725098,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Wi-Fi option visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "Network options displayed",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Wi-Fi option visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 3,
+        "description": "Enter Wi-Fi settings",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.76524019241333,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Wi-Fi toggle visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          },
+          {
+            "criterion": "Available networks section visible",
+            "passed": false,
+            "details": {
+              "element_found": false
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Wi-Fi toggle visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            },
+            {
+              "criterion": "Available networks section visible",
+              "passed": false,
+              "details": {
+                "element_found": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 4,
+        "description": "Toggle Wi-Fi ON and verify connection",
+        "execution_status": "validation_failure",
+        "execution_duration": 1.9160947799682617,
+        "verification_status": "failed",
+        "validation_details": [
+          {
+            "criterion": "Wi-Fi status shows ON",
+            "passed": false,
+            "details": {
+              "expected": "ON",
+              "actual": "OFF"
+            }
+          },
+          {
+            "criterion": "Available networks populate",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {
+          "failed_validations": [
+            {
+              "criterion": "Wi-Fi status shows ON",
+              "passed": false,
+              "details": {
+                "expected": "ON",
+                "actual": "OFF"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "step_number": 5,
+        "description": "Toggle Wi-Fi OFF and verify disconnection",
+        "execution_status": "success",
+        "execution_duration": 2.514512062072754,
+        "verification_status": "passed",
+        "validation_details": [
+          {
+            "criterion": "Wi-Fi status shows OFF",
+            "passed": true,
+            "details": {
+              "expected": "OFF",
+              "actual": "OFF"
+            }
+          },
+          {
+            "criterion": "No connected network shown",
+            "passed": true,
+            "details": {
+              "note": "Generic validation assumed passed"
+            }
+          }
+        ],
+        "issues": {}
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "category": "execution_improvements",
+      "priority": "high",
+      "description": "4 steps failed execution. Review error details and environment setup."
+    },
+    {
+      "category": "validation_improvements",
+      "priority": "medium",
+      "description": "5 validation criteria failed. Review test assertions."
+    },
+    {
+      "category": "test_reliability",
+      "priority": "high",
+      "description": "Success rate below 80%. Consider improving test stability and environment setup."
+    }
+  ],
+  "legacy_summary": "FAIL"
+}

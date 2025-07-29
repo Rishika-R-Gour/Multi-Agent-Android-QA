@@ -1,0 +1,88 @@
+{
+  "evaluation_id": "eval_2025-07-28_15-23-02",
+  "session_id": "session_20250728_152301_settings_wifi",
+  "test_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+  "overall_status": "PASS",
+  "timestamp": "2025-07-28_15-23-02",
+  "processing_time": 0.0003638267517089844,
+  "test_results": [],
+  "agent_decision_logs": [
+    {
+      "timestamp": 1753730582.8754292,
+      "agent": "PlannerAgent",
+      "session_id": "session_20250728_152301_settings_wifi",
+      "action": "generate_test_plan",
+      "test_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+      "plan_id": "adaptive_plan_settings_wifi_1",
+      "subgoals_count": 4,
+      "steps_count": 19,
+      "processing_time": 0.6886539459228516,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730582.899561,
+      "agent": "QAFlowManager",
+      "session_id": "session_20250728_152301_settings_wifi",
+      "action": "error_handling",
+      "error": "'AndroidEnv' object has no attribute 'get_state'",
+      "status": "failed"
+    }
+  ],
+  "visual_trace": {
+    "enabled": true,
+    "trace_id": null,
+    "frame_count": 0,
+    "trace_duration": 0
+  },
+  "ai_analysis": null,
+  "metrics": {
+    "bug_detection_accuracy": {
+      "bugs_detected": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "agent_recovery_ability": {
+      "replanning_events": 0,
+      "recovery_attempts": 0,
+      "successful_recoveries": 0,
+      "recovery_success_rate": 0.0,
+      "adaptation_score": 0.0
+    },
+    "test_efficiency": {
+      "efficiency_score": 0.5,
+      "details": "No trace data available"
+    },
+    "coverage_completeness": {
+      "tested_features": [],
+      "expected_features": [
+        "wifi_functionality",
+        "toggle_operations",
+        "error_handling",
+        "app_navigation",
+        "state_persistence",
+        "ui_responsiveness"
+      ],
+      "coverage_percentage": 0.0,
+      "missing_features": [
+        "wifi_functionality",
+        "toggle_operations",
+        "error_handling",
+        "app_navigation",
+        "state_persistence",
+        "ui_responsiveness"
+      ]
+    }
+  },
+  "statistics": {
+    "total_test_steps": 0,
+    "passed_steps": 0,
+    "failed_steps": 0,
+    "total_agent_decisions": 2,
+    "unique_agents": 2,
+    "visual_frames_captured": 0,
+    "test_success_rate": 0.0
+  }
+}

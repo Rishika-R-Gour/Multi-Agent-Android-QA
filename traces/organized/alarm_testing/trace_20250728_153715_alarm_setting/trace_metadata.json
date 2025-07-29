@@ -1,0 +1,130 @@
+{
+  "trace_id": "trace_20250728_153715_alarm_setting",
+  "test_goal": "Set an alarm for 7:00 AM",
+  "task_name": "alarm_setting",
+  "start_time": 1753731435.959193,
+  "frames": [],
+  "agent_actions": [],
+  "ui_states": [
+    {
+      "timestamp": 1753731436.558652,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    },
+    {
+      "timestamp": 1753731436.87448,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    },
+    {
+      "timestamp": 1753731437.185156,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        },
+        {
+          "text": "ON",
+          "bounds": [
+            350,
+            100,
+            400,
+            150
+          ],
+          "clickable": true,
+          "switch": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 0
+    }
+  ],
+  "metadata": {
+    "trace_path": "traces/trace_20250728_153715_alarm_setting",
+    "frame_count": 0,
+    "total_duration": 1.5279309749603271
+  },
+  "end_time": 1753731437.487124
+}

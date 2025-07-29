@@ -1,0 +1,51 @@
+{
+  "trace_id": "trace_20250728_152301_settings_wifi",
+  "test_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+  "task_name": "settings_wifi",
+  "start_time": 1753730581.513471,
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp": 1753730582.186752,
+      "file_path": "traces/trace_20250728_152301_settings_wifi/frame_0000.png",
+      "ui_element_count": 2,
+      "dimensions": null
+    }
+  ],
+  "agent_actions": [],
+  "ui_states": [
+    {
+      "timestamp": 1753730582.1867719,
+      "ui_elements": [
+        {
+          "text": "Settings",
+          "bounds": [
+            0,
+            0,
+            100,
+            50
+          ],
+          "clickable": true
+        },
+        {
+          "text": "Wi-Fi",
+          "bounds": [
+            0,
+            100,
+            100,
+            150
+          ],
+          "clickable": true
+        }
+      ],
+      "screen_info": {},
+      "frame_id": 1
+    }
+  ],
+  "metadata": {
+    "trace_path": "traces/trace_20250728_152301_settings_wifi",
+    "frame_count": 1,
+    "total_duration": 1.3860979080200195
+  },
+  "end_time": 1753730582.8995688
+}

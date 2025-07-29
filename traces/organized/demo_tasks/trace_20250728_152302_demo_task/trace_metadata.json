@@ -1,0 +1,74 @@
+{
+  "trace_id": "trace_20250728_152302_demo_task",
+  "test_goal": "Demo visual recording",
+  "task_name": "demo_task",
+  "start_time": 1753730582.900356,
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp": 1753730582.973143,
+      "file_path": "traces/trace_20250728_152302_demo_task/frame_0000.png",
+      "ui_element_count": 1,
+      "dimensions": null
+    },
+    {
+      "frame_id": 1,
+      "timestamp": 1753730583.163444,
+      "file_path": "traces/trace_20250728_152302_demo_task/frame_0001.png",
+      "ui_element_count": 1,
+      "dimensions": null
+    },
+    {
+      "frame_id": 2,
+      "timestamp": 1753730583.35532,
+      "file_path": "traces/trace_20250728_152302_demo_task/frame_0002.png",
+      "ui_element_count": 1,
+      "dimensions": null
+    }
+  ],
+  "agent_actions": [
+    {
+      "timestamp": 1753730582.9731698,
+      "agent": "DemoAgent",
+      "action": {
+        "action": "tap",
+        "target": "Button 0"
+      },
+      "result": {
+        "success": true
+      },
+      "frame_id": 1
+    },
+    {
+      "timestamp": 1753730583.163477,
+      "agent": "DemoAgent",
+      "action": {
+        "action": "tap",
+        "target": "Button 1"
+      },
+      "result": {
+        "success": true
+      },
+      "frame_id": 2
+    },
+    {
+      "timestamp": 1753730583.355359,
+      "agent": "DemoAgent",
+      "action": {
+        "action": "tap",
+        "target": "Button 2"
+      },
+      "result": {
+        "success": true
+      },
+      "frame_id": 3
+    }
+  ],
+  "ui_states": [],
+  "metadata": {
+    "trace_path": "traces/trace_20250728_152302_demo_task",
+    "frame_count": 3,
+    "total_duration": 0.5600321292877197
+  },
+  "end_time": 1753730583.4603882
+}

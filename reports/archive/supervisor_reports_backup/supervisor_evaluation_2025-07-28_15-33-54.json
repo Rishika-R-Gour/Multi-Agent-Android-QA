@@ -1,0 +1,3494 @@
+{
+  "evaluation_id": "eval_2025-07-28_15-33-54",
+  "session_id": "session_20250728_153340_alarm_setting",
+  "test_goal": "Set an alarm for 7:00 AM",
+  "overall_status": "FAIL",
+  "timestamp": "2025-07-28_15-33-54",
+  "processing_time": 0.00586700439453125,
+  "test_results": [
+    {
+      "step": "Verify modal state for: Launch clock application",
+      "result": "FAIL",
+      "execution_time": 0.10777664184570312,
+      "verification_time": 0.001077890396118164,
+      "verification_details": {
+        "verification_id": "verify_1753731221",
+        "timestamp": "2025-07-28T15:33:41.855285",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "home_screen",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "home_screen",
+            "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731221.855276,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731221.8553312,
+        "duration": 5.507469177246094e-05
+      }
+    },
+    {
+      "step": "Execute: find_clock_app",
+      "result": "FAIL",
+      "execution_time": 0.1011040210723877,
+      "verification_time": 0.0005161762237548828,
+      "verification_details": {
+        "verification_id": "verify_1753731222",
+        "timestamp": "2025-07-28T15:33:42.462947",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "search",
+          "target": "Clock app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "search",
+            "target": "Clock app",
+            "message": "Mock execution of search on Clock app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731222.46294,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731222.4630148,
+        "duration": 7.486343383789062e-05
+      }
+    },
+    {
+      "step": "Execute: launch_app",
+      "result": "FAIL",
+      "execution_time": 0.1051177978515625,
+      "verification_time": 0.0007371902465820312,
+      "verification_details": {
+        "verification_id": "verify_1753731223",
+        "timestamp": "2025-07-28T15:33:43.071802",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "navigate",
+          "target": "launch app",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "navigate",
+            "target": "launch app",
+            "error": "Mock failure: timeout",
+            "failure_type": "timeout",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731223.071795,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731223.071897,
+        "duration": 0.00010204315185546875
+      }
+    },
+    {
+      "step": "Verify completion of: Launch clock application",
+      "result": "FAIL",
+      "execution_time": 0.10036516189575195,
+      "verification_time": 0.0010459423065185547,
+      "verification_details": {
+        "verification_id": "verify_1753731223",
+        "timestamp": "2025-07-28T15:33:43.678117",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "clock_app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "clock_app",
+            "message": "Mock execution of verify_subgoal_completion on clock_app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731223.6781068,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731223.6783092,
+        "duration": 0.00020241737365722656
+      }
+    },
+    {
+      "step": "Verify modal state for: Navigate to alarm section",
+      "result": "FAIL",
+      "execution_time": 0.10185480117797852,
+      "verification_time": 0.0007331371307373047,
+      "verification_details": {
+        "verification_id": "verify_1753731224",
+        "timestamp": "2025-07-28T15:33:44.285387",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "clock_app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "clock_app",
+            "message": "Mock execution of verify_modal_state on clock_app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731224.285377,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731224.2854779,
+        "duration": 0.00010085105895996094
+      }
+    },
+    {
+      "step": "Execute: locate_alarm_tab",
+      "result": "FAIL",
+      "execution_time": 0.10506391525268555,
+      "verification_time": 0.0005922317504882812,
+      "verification_details": {
+        "verification_id": "verify_1753731224",
+        "timestamp": "2025-07-28T15:33:44.894952",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "locate alarm tab",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "locate alarm tab",
+            "message": "Mock execution of interact on locate alarm tab completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731224.894946,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731224.895027,
+        "duration": 8.082389831542969e-05
+      }
+    },
+    {
+      "step": "Execute: switch_to_alarms",
+      "result": "FAIL",
+      "execution_time": 0.10260891914367676,
+      "verification_time": 0.0009601116180419922,
+      "verification_details": {
+        "verification_id": "verify_1753731225",
+        "timestamp": "2025-07-28T15:33:45.503144",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "switch to alarms",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "switch to alarms",
+            "message": "Mock execution of interact on switch to alarms completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731225.503134,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731225.5032651,
+        "duration": 0.00013113021850585938
+      }
+    },
+    {
+      "step": "Verify completion of: Navigate to alarm section",
+      "result": "FAIL",
+      "execution_time": 0.12053084373474121,
+      "verification_time": 0.13897395133972168,
+      "verification_details": {
+        "verification_id": "verify_1753731226",
+        "timestamp": "2025-07-28T15:33:46.133512",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "alarm_management",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "alarm_management",
+            "message": "Mock execution of verify_subgoal_completion on alarm_management completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731226.133475,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731226.133991,
+        "duration": 0.0005159378051757812
+      }
+    },
+    {
+      "step": "Verify modal state for: Create and configure alarm",
+      "result": "FAIL",
+      "execution_time": 0.10048913955688477,
+      "verification_time": 0.0011069774627685547,
+      "verification_details": {
+        "verification_id": "verify_1753731226",
+        "timestamp": "2025-07-28T15:33:46.878365",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "alarm_management",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "verify_modal_state",
+            "target": "alarm_management",
+            "error": "Mock failure: ui_state_changed",
+            "failure_type": "ui_state_changed",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731226.878356,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731226.878464,
+        "duration": 0.00010800361633300781
+      }
+    },
+    {
+      "step": "Execute: tap_add_alarm",
+      "result": "FAIL",
+      "execution_time": 0.10301089286804199,
+      "verification_time": 0.0009720325469970703,
+      "verification_details": {
+        "verification_id": "verify_1753731227",
+        "timestamp": "2025-07-28T15:33:47.485362",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "tap add alarm",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "tap add alarm",
+            "message": "Mock execution of interact on tap add alarm completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731227.4853508,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731227.4854689,
+        "duration": 0.00011801719665527344
+      }
+    },
+    {
+      "step": "Execute: set_time",
+      "result": "FAIL",
+      "execution_time": 0.10496306419372559,
+      "verification_time": 0.0005428791046142578,
+      "verification_details": {
+        "verification_id": "verify_1753731228",
+        "timestamp": "2025-07-28T15:33:48.092238",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "set time",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "set time",
+            "message": "Mock execution of interact on set time completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731228.092233,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731228.092295,
+        "duration": 6.198883056640625e-05
+      }
+    },
+    {
+      "step": "Execute: configure_options",
+      "result": "FAIL",
+      "execution_time": 0.1037139892578125,
+      "verification_time": 0.0004620552062988281,
+      "verification_details": {
+        "verification_id": "verify_1753731228",
+        "timestamp": "2025-07-28T15:33:48.698656",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "configure options",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "configure options",
+            "message": "Mock execution of interact on configure options completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731228.6986492,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731228.69871,
+        "duration": 6.079673767089844e-05
+      }
+    },
+    {
+      "step": "Execute: save_alarm",
+      "result": "FAIL",
+      "execution_time": 0.10159492492675781,
+      "verification_time": 0.0002808570861816406,
+      "verification_details": {
+        "verification_id": "verify_1753731229",
+        "timestamp": "2025-07-28T15:33:49.305962",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "save alarm",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "save alarm",
+            "message": "Mock execution of interact on save alarm completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731229.3059578,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731229.305992,
+        "duration": 3.409385681152344e-05
+      }
+    },
+    {
+      "step": "Verify completion of: Create and configure alarm",
+      "result": "FAIL",
+      "execution_time": 0.10515093803405762,
+      "verification_time": 0.0005202293395996094,
+      "verification_details": {
+        "verification_id": "verify_1753731229",
+        "timestamp": "2025-07-28T15:33:49.916872",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "alarm_creation",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "alarm_creation",
+            "message": "Mock execution of verify_subgoal_completion on alarm_creation completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731229.916866,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731229.916933,
+        "duration": 6.699562072753906e-05
+      }
+    },
+    {
+      "step": "Verify modal state for: Test alarm activation/deactivation",
+      "result": "FAIL",
+      "execution_time": 0.10105204582214355,
+      "verification_time": 0.0008697509765625,
+      "verification_details": {
+        "verification_id": "verify_1753731230",
+        "timestamp": "2025-07-28T15:33:50.523876",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "alarm_management",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "verify_modal_state",
+            "target": "alarm_management",
+            "error": "Mock failure: element_not_found",
+            "failure_type": "element_not_found",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731230.523864,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731230.524,
+        "duration": 0.00013589859008789062
+      }
+    },
+    {
+      "step": "Execute: toggle_alarm_on",
+      "result": "FAIL",
+      "execution_time": 0.1011960506439209,
+      "verification_time": 0.0005130767822265625,
+      "verification_details": {
+        "verification_id": "verify_1753731231",
+        "timestamp": "2025-07-28T15:33:51.131238",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "toggle alarm on",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "toggle alarm on",
+            "message": "Mock execution of interact on toggle alarm on completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731231.131231,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731231.131299,
+        "duration": 6.794929504394531e-05
+      }
+    },
+    {
+      "step": "Execute: verify_active",
+      "result": "FAIL",
+      "execution_time": 0.1018068790435791,
+      "verification_time": 0.0006759166717529297,
+      "verification_details": {
+        "verification_id": "verify_1753731231",
+        "timestamp": "2025-07-28T15:33:51.739154",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify active",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify active",
+            "message": "Mock execution of interact on verify active completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731231.739146,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731231.73932,
+        "duration": 0.00017404556274414062
+      }
+    },
+    {
+      "step": "Execute: toggle_alarm_off",
+      "result": "FAIL",
+      "execution_time": 0.10506296157836914,
+      "verification_time": 0.0004150867462158203,
+      "verification_details": {
+        "verification_id": "verify_1753731232",
+        "timestamp": "2025-07-28T15:33:52.347142",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "toggle alarm off",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "toggle alarm off",
+            "message": "Mock execution of interact on toggle alarm off completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731232.3471382,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731232.347216,
+        "duration": 7.772445678710938e-05
+      }
+    },
+    {
+      "step": "Execute: verify_inactive",
+      "result": "FAIL",
+      "execution_time": 0.10316801071166992,
+      "verification_time": 0.0011861324310302734,
+      "verification_details": {
+        "verification_id": "verify_1753731232",
+        "timestamp": "2025-07-28T15:33:52.956127",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify inactive",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify inactive",
+            "message": "Mock execution of interact on verify inactive completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731232.956118,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731232.956258,
+        "duration": 0.0001399517059326172
+      }
+    },
+    {
+      "step": "Verify completion of: Test alarm activation/deactivation",
+      "result": "FAIL",
+      "execution_time": 0.10061907768249512,
+      "verification_time": 0.0021381378173828125,
+      "verification_details": {
+        "verification_id": "verify_1753731233",
+        "timestamp": "2025-07-28T15:33:53.562126",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "alarm_configured",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "verify_subgoal_completion",
+            "target": "alarm_configured",
+            "error": "Mock failure: ui_state_changed",
+            "failure_type": "ui_state_changed",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731233.5621178,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731233.563616,
+        "duration": 0.0014982223510742188
+      }
+    }
+  ],
+  "agent_decision_logs": [
+    {
+      "timestamp": 1753731221.725183,
+      "agent": "PlannerAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "generate_test_plan",
+      "test_goal": "Set an alarm for 7:00 AM",
+      "plan_id": "adaptive_plan_alarm_setting_1",
+      "subgoals_count": 4,
+      "steps_count": 20,
+      "processing_time": 0.6498148441314697,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731221.85516,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 9,
+      "step_description": "Verify modal state for: Launch clock application",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "home_screen",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "home_screen",
+          "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10777664184570312,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731221.856351,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 9,
+      "verification_result": {
+        "verification_id": "verify_1753731221",
+        "timestamp": "2025-07-28T15:33:41.855285",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "home_screen",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "home_screen",
+            "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731221.855276,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731221.8553312,
+        "duration": 5.507469177246094e-05
+      },
+      "processing_time": 0.001077890396118164,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731222.4627662,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 11,
+      "step_description": "Execute: find_clock_app",
+      "execution_result": {
+        "success": true,
+        "action_type": "search",
+        "target": "Clock app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "search",
+          "target": "Clock app",
+          "message": "Mock execution of search on Clock app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.1011040210723877,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731222.4634528,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 11,
+      "verification_result": {
+        "verification_id": "verify_1753731222",
+        "timestamp": "2025-07-28T15:33:42.462947",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "search",
+          "target": "Clock app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "search",
+            "target": "Clock app",
+            "message": "Mock execution of search on Clock app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731222.46294,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731222.4630148,
+        "duration": 7.486343383789062e-05
+      },
+      "processing_time": 0.0005161762237548828,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731223.0715342,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 12,
+      "step_description": "Execute: launch_app",
+      "execution_result": {
+        "success": true,
+        "action_type": "navigate",
+        "target": "launch app",
+        "error": null,
+        "details": {
+          "success": false,
+          "action": "navigate",
+          "target": "launch app",
+          "error": "Mock failure: timeout",
+          "failure_type": "timeout",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.1051177978515625,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731223.0725272,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 12,
+      "verification_result": {
+        "verification_id": "verify_1753731223",
+        "timestamp": "2025-07-28T15:33:43.071802",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "navigate",
+          "target": "launch app",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "navigate",
+            "target": "launch app",
+            "error": "Mock failure: timeout",
+            "failure_type": "timeout",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731223.071795,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731223.071897,
+        "duration": 0.00010204315185546875
+      },
+      "processing_time": 0.0007371902465820312,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731223.677779,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 13,
+      "step_description": "Verify completion of: Launch clock application",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "clock_app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "clock_app",
+          "message": "Mock execution of verify_subgoal_completion on clock_app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10036516189575195,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731223.6791492,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 13,
+      "verification_result": {
+        "verification_id": "verify_1753731223",
+        "timestamp": "2025-07-28T15:33:43.678117",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "clock_app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "clock_app",
+            "message": "Mock execution of verify_subgoal_completion on clock_app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731223.6781068,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731223.6783092,
+        "duration": 0.00020241737365722656
+      },
+      "processing_time": 0.0010459423065185547,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731224.2851431,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 19,
+      "step_description": "Verify modal state for: Navigate to alarm section",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "clock_app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "clock_app",
+          "message": "Mock execution of verify_modal_state on clock_app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10185480117797852,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731224.2861052,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 19,
+      "verification_result": {
+        "verification_id": "verify_1753731224",
+        "timestamp": "2025-07-28T15:33:44.285387",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "clock_app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "clock_app",
+            "message": "Mock execution of verify_modal_state on clock_app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731224.285377,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731224.2854779,
+        "duration": 0.00010085105895996094
+      },
+      "processing_time": 0.0007331371307373047,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731224.894798,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 21,
+      "step_description": "Execute: locate_alarm_tab",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "locate alarm tab",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "locate alarm tab",
+          "message": "Mock execution of interact on locate alarm tab completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10506391525268555,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731224.8955362,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 21,
+      "verification_result": {
+        "verification_id": "verify_1753731224",
+        "timestamp": "2025-07-28T15:33:44.894952",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "locate alarm tab",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "locate alarm tab",
+            "message": "Mock execution of interact on locate alarm tab completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731224.894946,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731224.895027,
+        "duration": 8.082389831542969e-05
+      },
+      "processing_time": 0.0005922317504882812,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731225.502848,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 22,
+      "step_description": "Execute: switch_to_alarms",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "switch to alarms",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "switch to alarms",
+          "message": "Mock execution of interact on switch to alarms completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10260891914367676,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731225.504087,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 22,
+      "verification_result": {
+        "verification_id": "verify_1753731225",
+        "timestamp": "2025-07-28T15:33:45.503144",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "switch to alarms",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "switch to alarms",
+            "message": "Mock execution of interact on switch to alarms completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731225.503134,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731225.5032651,
+        "duration": 0.00013113021850585938
+      },
+      "processing_time": 0.0009601116180419922,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731226.132846,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 23,
+      "step_description": "Verify completion of: Navigate to alarm section",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "alarm_management",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "alarm_management",
+          "message": "Mock execution of verify_subgoal_completion on alarm_management completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.12053084373474121,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731226.2724311,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 23,
+      "verification_result": {
+        "verification_id": "verify_1753731226",
+        "timestamp": "2025-07-28T15:33:46.133512",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "alarm_management",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "alarm_management",
+            "message": "Mock execution of verify_subgoal_completion on alarm_management completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731226.133475,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731226.133991,
+        "duration": 0.0005159378051757812
+      },
+      "processing_time": 0.13897395133972168,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731226.878128,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 29,
+      "step_description": "Verify modal state for: Create and configure alarm",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "alarm_management",
+        "error": null,
+        "details": {
+          "success": false,
+          "action": "verify_modal_state",
+          "target": "alarm_management",
+          "error": "Mock failure: ui_state_changed",
+          "failure_type": "ui_state_changed",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10048913955688477,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731226.8794591,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 29,
+      "verification_result": {
+        "verification_id": "verify_1753731226",
+        "timestamp": "2025-07-28T15:33:46.878365",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "alarm_management",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "verify_modal_state",
+            "target": "alarm_management",
+            "error": "Mock failure: ui_state_changed",
+            "failure_type": "ui_state_changed",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731226.878356,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731226.878464,
+        "duration": 0.00010800361633300781
+      },
+      "processing_time": 0.0011069774627685547,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731227.485075,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 31,
+      "step_description": "Execute: tap_add_alarm",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "tap add alarm",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "tap add alarm",
+          "message": "Mock execution of interact on tap add alarm completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10301089286804199,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731227.486318,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 31,
+      "verification_result": {
+        "verification_id": "verify_1753731227",
+        "timestamp": "2025-07-28T15:33:47.485362",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "tap add alarm",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "tap add alarm",
+            "message": "Mock execution of interact on tap add alarm completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731227.4853508,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731227.4854689,
+        "duration": 0.00011801719665527344
+      },
+      "processing_time": 0.0009720325469970703,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731228.092082,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 32,
+      "step_description": "Execute: set_time",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "set time",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "set time",
+          "message": "Mock execution of interact on set time completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10496306419372559,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731228.092772,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 32,
+      "verification_result": {
+        "verification_id": "verify_1753731228",
+        "timestamp": "2025-07-28T15:33:48.092238",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "set time",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "set time",
+            "message": "Mock execution of interact on set time completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731228.092233,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731228.092295,
+        "duration": 6.198883056640625e-05
+      },
+      "processing_time": 0.0005428791046142578,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731228.6984608,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 33,
+      "step_description": "Execute: configure_options",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "configure options",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "configure options",
+          "message": "Mock execution of interact on configure options completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.1037139892578125,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731228.6991072,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 33,
+      "verification_result": {
+        "verification_id": "verify_1753731228",
+        "timestamp": "2025-07-28T15:33:48.698656",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "configure options",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "configure options",
+            "message": "Mock execution of interact on configure options completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731228.6986492,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731228.69871,
+        "duration": 6.079673767089844e-05
+      },
+      "processing_time": 0.0004620552062988281,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731229.3058681,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 34,
+      "step_description": "Execute: save_alarm",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "save alarm",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "save alarm",
+          "message": "Mock execution of interact on save alarm completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10159492492675781,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731229.306239,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 34,
+      "verification_result": {
+        "verification_id": "verify_1753731229",
+        "timestamp": "2025-07-28T15:33:49.305962",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "save alarm",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "save alarm",
+            "message": "Mock execution of interact on save alarm completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731229.3059578,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731229.305992,
+        "duration": 3.409385681152344e-05
+      },
+      "processing_time": 0.0002808570861816406,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731229.91661,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 35,
+      "step_description": "Verify completion of: Create and configure alarm",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "alarm_creation",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "alarm_creation",
+          "message": "Mock execution of verify_subgoal_completion on alarm_creation completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10515093803405762,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731229.917382,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 35,
+      "verification_result": {
+        "verification_id": "verify_1753731229",
+        "timestamp": "2025-07-28T15:33:49.916872",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "alarm_creation",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "alarm_creation",
+            "message": "Mock execution of verify_subgoal_completion on alarm_creation completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731229.916866,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731229.916933,
+        "duration": 6.699562072753906e-05
+      },
+      "processing_time": 0.0005202293395996094,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731230.523564,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 39,
+      "step_description": "Verify modal state for: Test alarm activation/deactivation",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "alarm_management",
+        "error": null,
+        "details": {
+          "success": false,
+          "action": "verify_modal_state",
+          "target": "alarm_management",
+          "error": "Mock failure: element_not_found",
+          "failure_type": "element_not_found",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10105204582214355,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731230.524728,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 39,
+      "verification_result": {
+        "verification_id": "verify_1753731230",
+        "timestamp": "2025-07-28T15:33:50.523876",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "alarm_management",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "verify_modal_state",
+            "target": "alarm_management",
+            "error": "Mock failure: element_not_found",
+            "failure_type": "element_not_found",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731230.523864,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731230.524,
+        "duration": 0.00013589859008789062
+      },
+      "processing_time": 0.0008697509765625,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731231.1310349,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 41,
+      "step_description": "Execute: toggle_alarm_on",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "toggle alarm on",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "toggle alarm on",
+          "message": "Mock execution of interact on toggle alarm on completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.1011960506439209,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731231.131741,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 41,
+      "verification_result": {
+        "verification_id": "verify_1753731231",
+        "timestamp": "2025-07-28T15:33:51.131238",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "toggle alarm on",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "toggle alarm on",
+            "message": "Mock execution of interact on toggle alarm on completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731231.131231,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731231.131299,
+        "duration": 6.794929504394531e-05
+      },
+      "processing_time": 0.0005130767822265625,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731231.73866,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 42,
+      "step_description": "Execute: verify_active",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify active",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify active",
+          "message": "Mock execution of interact on verify active completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.1018068790435791,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731231.739817,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 42,
+      "verification_result": {
+        "verification_id": "verify_1753731231",
+        "timestamp": "2025-07-28T15:33:51.739154",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify active",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify active",
+            "message": "Mock execution of interact on verify active completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731231.739146,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731231.73932,
+        "duration": 0.00017404556274414062
+      },
+      "processing_time": 0.0006759166717529297,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731232.3469892,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 43,
+      "step_description": "Execute: toggle_alarm_off",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "toggle alarm off",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "toggle alarm off",
+          "message": "Mock execution of interact on toggle alarm off completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10506296157836914,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731232.347549,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 43,
+      "verification_result": {
+        "verification_id": "verify_1753731232",
+        "timestamp": "2025-07-28T15:33:52.347142",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "toggle alarm off",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "toggle alarm off",
+            "message": "Mock execution of interact on toggle alarm off completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731232.3471382,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731232.347216,
+        "duration": 7.772445678710938e-05
+      },
+      "processing_time": 0.0004150867462158203,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731232.955861,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 44,
+      "step_description": "Execute: verify_inactive",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify inactive",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify inactive",
+          "message": "Mock execution of interact on verify inactive completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10316801071166992,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731232.957299,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 44,
+      "verification_result": {
+        "verification_id": "verify_1753731232",
+        "timestamp": "2025-07-28T15:33:52.956127",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify inactive",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify inactive",
+            "message": "Mock execution of interact on verify inactive completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731232.956118,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731232.956258,
+        "duration": 0.0001399517059326172
+      },
+      "processing_time": 0.0011861324310302734,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731233.5618591,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "execute_step",
+      "step_id": 45,
+      "step_description": "Verify completion of: Test alarm activation/deactivation",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "alarm_configured",
+        "error": null,
+        "details": {
+          "success": false,
+          "action": "verify_subgoal_completion",
+          "target": "alarm_configured",
+          "error": "Mock failure: ui_state_changed",
+          "failure_type": "ui_state_changed",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10061907768249512,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753731233.5642502,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_153340_alarm_setting",
+      "action": "verify_step",
+      "step_id": 45,
+      "verification_result": {
+        "verification_id": "verify_1753731233",
+        "timestamp": "2025-07-28T15:33:53.562126",
+        "planner_goal": "Set an alarm for 7:00 AM",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "alarm_configured",
+          "error": null,
+          "details": {
+            "success": false,
+            "action": "verify_subgoal_completion",
+            "target": "alarm_configured",
+            "error": "Mock failure: ui_state_changed",
+            "failure_type": "ui_state_changed",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753731233.5621178,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753731233.563616,
+        "duration": 0.0014982223510742188
+      },
+      "processing_time": 0.0021381378173828125,
+      "status": "success"
+    }
+  ],
+  "visual_trace": {
+    "enabled": true,
+    "trace_id": null,
+    "frame_count": 0,
+    "trace_duration": 0
+  },
+  "ai_analysis": null,
+  "metrics": {
+    "bug_detection_accuracy": {
+      "bugs_detected": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "agent_recovery_ability": {
+      "replanning_events": 0,
+      "recovery_attempts": 0,
+      "successful_recoveries": 0,
+      "recovery_success_rate": 0.0,
+      "adaptation_score": 0.0
+    },
+    "test_efficiency": {
+      "efficiency_score": 0.5,
+      "details": "No trace data available"
+    },
+    "coverage_completeness": {
+      "tested_features": [
+        "toggle_operations"
+      ],
+      "expected_features": [
+        "error_handling",
+        "ui_responsiveness",
+        "state_persistence",
+        "toggle_operations",
+        "app_navigation",
+        "wifi_functionality"
+      ],
+      "coverage_percentage": 16.666666666666664,
+      "missing_features": [
+        "error_handling",
+        "ui_responsiveness",
+        "state_persistence",
+        "app_navigation",
+        "wifi_functionality"
+      ]
+    }
+  },
+  "statistics": {
+    "total_test_steps": 20,
+    "passed_steps": 0,
+    "failed_steps": 20,
+    "total_agent_decisions": 41,
+    "unique_agents": 3,
+    "visual_frames_captured": 0,
+    "test_success_rate": 0.0
+  }
+}

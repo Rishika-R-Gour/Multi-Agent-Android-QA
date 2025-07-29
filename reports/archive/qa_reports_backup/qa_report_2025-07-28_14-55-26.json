@@ -1,0 +1,25 @@
+{
+    "test_goal": "Test turning Wi-Fi on and off",
+    "overall_status": "FAIL",
+    "steps": [
+        {
+            "step": "Subgoal 1",
+            "result": "FAIL",
+            "action": "unknown",
+            "target": "unknown"
+        },
+        {
+            "step": "Subgoal 2",
+            "result": "FAIL",
+            "action": "unknown",
+            "target": "unknown"
+        },
+        {
+            "step": "Subgoal 3",
+            "result": "FAIL",
+            "action": "unknown",
+            "target": "unknown"
+        }
+    ],
+    "timestamp": "2025-07-28_14-55-26"
+}

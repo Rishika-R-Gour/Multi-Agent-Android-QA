@@ -1,0 +1,3312 @@
+{
+  "evaluation_id": "eval_2025-07-28_15-23-55",
+  "session_id": "session_20250728_152342_settings_wifi",
+  "test_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+  "overall_status": "FAIL",
+  "timestamp": "2025-07-28_15-23-55",
+  "processing_time": 0.006582975387573242,
+  "test_results": [
+    {
+      "step": "Verify modal state for: Navigate to WiFi settings",
+      "result": "FAIL",
+      "execution_time": 0.1076819896697998,
+      "verification_time": 0.00039696693420410156,
+      "verification_details": {
+        "verification_id": "verify_1753730624",
+        "timestamp": "2025-07-28T15:23:44.339089",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "home_screen",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "home_screen",
+            "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730624.339085,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730624.3391318,
+        "duration": 4.673004150390625e-05
+      }
+    },
+    {
+      "step": "Execute: launch_settings",
+      "result": "FAIL",
+      "execution_time": 0.10370206832885742,
+      "verification_time": 0.0010411739349365234,
+      "verification_details": {
+        "verification_id": "verify_1753730624",
+        "timestamp": "2025-07-28T15:23:44.948728",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "navigate",
+          "target": "Settings app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "navigate",
+            "target": "Settings app",
+            "message": "Mock execution of navigate on Settings app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730624.948715,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730624.948888,
+        "duration": 0.00017309188842773438
+      }
+    },
+    {
+      "step": "Execute: navigate_to_network",
+      "result": "FAIL",
+      "execution_time": 0.10472559928894043,
+      "verification_time": 0.0007829666137695312,
+      "verification_details": {
+        "verification_id": "verify_1753730625",
+        "timestamp": "2025-07-28T15:23:45.556121",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "tap",
+          "target": "Network & internet",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "tap",
+            "target": "Network & internet",
+            "message": "Mock execution of tap on Network & internet completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730625.5561118,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730625.556244,
+        "duration": 0.00013208389282226562
+      }
+    },
+    {
+      "step": "Verify completion of: Navigate to WiFi settings",
+      "result": "FAIL",
+      "execution_time": 0.10321402549743652,
+      "verification_time": 0.0007827281951904297,
+      "verification_details": {
+        "verification_id": "verify_1753730626",
+        "timestamp": "2025-07-28T15:23:46.161444",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "settings_app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "settings_app",
+            "message": "Mock execution of verify_subgoal_completion on settings_app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730626.161432,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730626.161613,
+        "duration": 0.00018095970153808594
+      }
+    },
+    {
+      "step": "Verify modal state for: Access WiFi configuration",
+      "result": "FAIL",
+      "execution_time": 0.10500502586364746,
+      "verification_time": 0.0013730525970458984,
+      "verification_details": {
+        "verification_id": "verify_1753730626",
+        "timestamp": "2025-07-28T15:23:46.769130",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "settings_network",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "settings_network",
+            "message": "Mock execution of verify_modal_state on settings_network completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730626.7691169,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730626.769427,
+        "duration": 0.0003101825714111328
+      }
+    },
+    {
+      "step": "Execute: tap_wifi_option",
+      "result": "FAIL",
+      "execution_time": 0.10222506523132324,
+      "verification_time": 0.0004417896270751953,
+      "verification_details": {
+        "verification_id": "verify_1753730627",
+        "timestamp": "2025-07-28T15:23:47.377589",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "tap",
+          "target": "Wi-Fi",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "tap",
+            "target": "Wi-Fi",
+            "message": "Mock execution of tap on Wi-Fi completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730627.377582,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730627.377675,
+        "duration": 9.298324584960938e-05
+      }
+    },
+    {
+      "step": "Execute: verify_wifi_screen",
+      "result": "FAIL",
+      "execution_time": 0.10405802726745605,
+      "verification_time": 0.0007240772247314453,
+      "verification_details": {
+        "verification_id": "verify_1753730627",
+        "timestamp": "2025-07-28T15:23:47.985487",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify wifi screen",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify wifi screen",
+            "message": "Mock execution of interact on verify wifi screen completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730627.9854789,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730627.985595,
+        "duration": 0.00011610984802246094
+      }
+    },
+    {
+      "step": "Verify completion of: Access WiFi configuration",
+      "result": "FAIL",
+      "execution_time": 0.10138535499572754,
+      "verification_time": 0.0011401176452636719,
+      "verification_details": {
+        "verification_id": "verify_1753730628",
+        "timestamp": "2025-07-28T15:23:48.593360",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "wifi_settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "wifi_settings",
+            "message": "Mock execution of verify_subgoal_completion on wifi_settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730628.5933492,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730628.593507,
+        "duration": 0.00015783309936523438
+      }
+    },
+    {
+      "step": "Verify modal state for: Test WiFi toggle functionality",
+      "result": "FAIL",
+      "execution_time": 0.10201811790466309,
+      "verification_time": 0.001493215560913086,
+      "verification_details": {
+        "verification_id": "verify_1753730629",
+        "timestamp": "2025-07-28T15:23:49.200573",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "wifi_settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "wifi_settings",
+            "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730629.2002308,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730629.2007449,
+        "duration": 0.0005140304565429688
+      }
+    },
+    {
+      "step": "Execute: toggle_wifi_on",
+      "result": "FAIL",
+      "execution_time": 0.10428595542907715,
+      "verification_time": 0.001664876937866211,
+      "verification_details": {
+        "verification_id": "verify_1753730629",
+        "timestamp": "2025-07-28T15:23:49.811010",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "toggle",
+          "target": "Wi-Fi toggle",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "toggle",
+            "target": "Wi-Fi toggle",
+            "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730629.811004,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730629.811092,
+        "duration": 8.797645568847656e-05
+      }
+    },
+    {
+      "step": "Execute: verify_activation",
+      "result": "FAIL",
+      "execution_time": 0.10217523574829102,
+      "verification_time": 0.0009729862213134766,
+      "verification_details": {
+        "verification_id": "verify_1753730630",
+        "timestamp": "2025-07-28T15:23:50.415678",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify",
+          "target": "verify activation",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify",
+            "target": "verify activation",
+            "message": "Mock execution of verify on verify activation completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730630.415669,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730630.415812,
+        "duration": 0.0001430511474609375
+      }
+    },
+    {
+      "step": "Execute: toggle_wifi_off",
+      "result": "FAIL",
+      "execution_time": 0.10175776481628418,
+      "verification_time": 0.0004830360412597656,
+      "verification_details": {
+        "verification_id": "verify_1753730631",
+        "timestamp": "2025-07-28T15:23:51.023396",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "toggle",
+          "target": "Wi-Fi toggle",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "toggle",
+            "target": "Wi-Fi toggle",
+            "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730631.0233889,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730631.023461,
+        "duration": 7.224082946777344e-05
+      }
+    },
+    {
+      "step": "Execute: verify_deactivation",
+      "result": "FAIL",
+      "execution_time": 0.10082292556762695,
+      "verification_time": 0.0005168914794921875,
+      "verification_details": {
+        "verification_id": "verify_1753730631",
+        "timestamp": "2025-07-28T15:23:51.626610",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify deactivation",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify deactivation",
+            "message": "Mock execution of interact on verify deactivation completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730631.6266031,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730631.6266959,
+        "duration": 9.274482727050781e-05
+      }
+    },
+    {
+      "step": "Verify completion of: Test WiFi toggle functionality",
+      "result": "FAIL",
+      "execution_time": 0.10451388359069824,
+      "verification_time": 0.0008640289306640625,
+      "verification_details": {
+        "verification_id": "verify_1753730632",
+        "timestamp": "2025-07-28T15:23:52.237005",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "wifi_settings_active",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "wifi_settings_active",
+            "message": "Mock execution of verify_subgoal_completion on wifi_settings_active completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730632.2369962,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730632.2371368,
+        "duration": 0.00014066696166992188
+      }
+    },
+    {
+      "step": "Verify modal state for: Verify state persistence",
+      "result": "FAIL",
+      "execution_time": 0.10121011734008789,
+      "verification_time": 0.001371145248413086,
+      "verification_details": {
+        "verification_id": "verify_1753730632",
+        "timestamp": "2025-07-28T15:23:52.841382",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "wifi_settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "wifi_settings",
+            "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730632.841373,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730632.8415282,
+        "duration": 0.0001552104949951172
+      }
+    },
+    {
+      "step": "Execute: exit_settings",
+      "result": "FAIL",
+      "execution_time": 0.10386991500854492,
+      "verification_time": 0.0007748603820800781,
+      "verification_details": {
+        "verification_id": "verify_1753730633",
+        "timestamp": "2025-07-28T15:23:53.449545",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "exit settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "exit settings",
+            "message": "Mock execution of interact on exit settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730633.449537,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730633.449654,
+        "duration": 0.00011706352233886719
+      }
+    },
+    {
+      "step": "Execute: re_enter_settings",
+      "result": "FAIL",
+      "execution_time": 0.105072021484375,
+      "verification_time": 0.0006680488586425781,
+      "verification_details": {
+        "verification_id": "verify_1753730634",
+        "timestamp": "2025-07-28T15:23:54.058873",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "re enter settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "re enter settings",
+            "message": "Mock execution of interact on re enter settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730634.0588648,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730634.058995,
+        "duration": 0.00013017654418945312
+      }
+    },
+    {
+      "step": "Execute: verify_state_maintained",
+      "result": "FAIL",
+      "execution_time": 0.10096287727355957,
+      "verification_time": 0.0016436576843261719,
+      "verification_details": {
+        "verification_id": "verify_1753730634",
+        "timestamp": "2025-07-28T15:23:54.666707",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify state maintained",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify state maintained",
+            "message": "Mock execution of interact on verify state maintained completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730634.6666691,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730634.667024,
+        "duration": 0.000354766845703125
+      }
+    },
+    {
+      "step": "Verify completion of: Verify state persistence",
+      "result": "FAIL",
+      "execution_time": 0.10296082496643066,
+      "verification_time": 0.0008141994476318359,
+      "verification_details": {
+        "verification_id": "verify_1753730635",
+        "timestamp": "2025-07-28T15:23:55.276499",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "verified_state",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "verified_state",
+            "message": "Mock execution of verify_subgoal_completion on verified_state completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730635.27649,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730635.2766268,
+        "duration": 0.00013685226440429688
+      }
+    }
+  ],
+  "agent_decision_logs": [
+    {
+      "timestamp": 1753730624.209117,
+      "agent": "PlannerAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "generate_test_plan",
+      "test_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+      "plan_id": "adaptive_plan_settings_wifi_1",
+      "subgoals_count": 4,
+      "steps_count": 19,
+      "processing_time": 0.6584088802337646,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730624.338985,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 9,
+      "step_description": "Verify modal state for: Navigate to WiFi settings",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "home_screen",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "home_screen",
+          "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.1076819896697998,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730624.339479,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 9,
+      "verification_result": {
+        "verification_id": "verify_1753730624",
+        "timestamp": "2025-07-28T15:23:44.339089",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "home_screen",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "home_screen",
+            "message": "Mock execution of verify_modal_state on home_screen completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730624.339085,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730624.3391318,
+        "duration": 4.673004150390625e-05
+      },
+      "processing_time": 0.00039696693420410156,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730624.948359,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 11,
+      "step_description": "Execute: launch_settings",
+      "execution_result": {
+        "success": true,
+        "action_type": "navigate",
+        "target": "Settings app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "navigate",
+          "target": "Settings app",
+          "message": "Mock execution of navigate on Settings app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10370206832885742,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730624.94975,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 11,
+      "verification_result": {
+        "verification_id": "verify_1753730624",
+        "timestamp": "2025-07-28T15:23:44.948728",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "navigate",
+          "target": "Settings app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "navigate",
+            "target": "Settings app",
+            "message": "Mock execution of navigate on Settings app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730624.948715,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730624.948888,
+        "duration": 0.00017309188842773438
+      },
+      "processing_time": 0.0010411739349365234,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730625.5558138,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 12,
+      "step_description": "Execute: navigate_to_network",
+      "execution_result": {
+        "success": true,
+        "action_type": "tap",
+        "target": "Network & internet",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "tap",
+          "target": "Network & internet",
+          "message": "Mock execution of tap on Network & internet completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10472559928894043,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730625.5568871,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 12,
+      "verification_result": {
+        "verification_id": "verify_1753730625",
+        "timestamp": "2025-07-28T15:23:45.556121",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "tap",
+          "target": "Network & internet",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "tap",
+            "target": "Network & internet",
+            "message": "Mock execution of tap on Network & internet completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730625.5561118,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730625.556244,
+        "duration": 0.00013208389282226562
+      },
+      "processing_time": 0.0007829666137695312,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730626.161182,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 13,
+      "step_description": "Verify completion of: Navigate to WiFi settings",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "settings_app",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "settings_app",
+          "message": "Mock execution of verify_subgoal_completion on settings_app completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10321402549743652,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730626.16221,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 13,
+      "verification_result": {
+        "verification_id": "verify_1753730626",
+        "timestamp": "2025-07-28T15:23:46.161444",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "settings_app",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "settings_app",
+            "message": "Mock execution of verify_subgoal_completion on settings_app completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730626.161432,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730626.161613,
+        "duration": 0.00018095970153808594
+      },
+      "processing_time": 0.0007827281951904297,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730626.768806,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 19,
+      "step_description": "Verify modal state for: Access WiFi configuration",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "settings_network",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "settings_network",
+          "message": "Mock execution of verify_modal_state on settings_network completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10500502586364746,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730626.770475,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 19,
+      "verification_result": {
+        "verification_id": "verify_1753730626",
+        "timestamp": "2025-07-28T15:23:46.769130",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "settings_network",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "settings_network",
+            "message": "Mock execution of verify_modal_state on settings_network completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730626.7691169,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730626.769427,
+        "duration": 0.0003101825714111328
+      },
+      "processing_time": 0.0013730525970458984,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730627.3773482,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 21,
+      "step_description": "Execute: tap_wifi_option",
+      "execution_result": {
+        "success": true,
+        "action_type": "tap",
+        "target": "Wi-Fi",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "tap",
+          "target": "Wi-Fi",
+          "message": "Mock execution of tap on Wi-Fi completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10222506523132324,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730627.378016,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 21,
+      "verification_result": {
+        "verification_id": "verify_1753730627",
+        "timestamp": "2025-07-28T15:23:47.377589",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "tap",
+          "target": "Wi-Fi",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "tap",
+            "target": "Wi-Fi",
+            "message": "Mock execution of tap on Wi-Fi completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730627.377582,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730627.377675,
+        "duration": 9.298324584960938e-05
+      },
+      "processing_time": 0.0004417896270751953,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730627.985239,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 22,
+      "step_description": "Execute: verify_wifi_screen",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify wifi screen",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify wifi screen",
+          "message": "Mock execution of interact on verify wifi screen completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10405802726745605,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730627.986198,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 22,
+      "verification_result": {
+        "verification_id": "verify_1753730627",
+        "timestamp": "2025-07-28T15:23:47.985487",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify wifi screen",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify wifi screen",
+            "message": "Mock execution of interact on verify wifi screen completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730627.9854789,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730627.985595,
+        "duration": 0.00011610984802246094
+      },
+      "processing_time": 0.0007240772247314453,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730628.5930722,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 23,
+      "step_description": "Verify completion of: Access WiFi configuration",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "wifi_settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "wifi_settings",
+          "message": "Mock execution of verify_subgoal_completion on wifi_settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10138535499572754,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730628.594473,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 23,
+      "verification_result": {
+        "verification_id": "verify_1753730628",
+        "timestamp": "2025-07-28T15:23:48.593360",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "wifi_settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "wifi_settings",
+            "message": "Mock execution of verify_subgoal_completion on wifi_settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730628.5933492,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730628.593507,
+        "duration": 0.00015783309936523438
+      },
+      "processing_time": 0.0011401176452636719,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730629.1996531,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 29,
+      "step_description": "Verify modal state for: Test WiFi toggle functionality",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "wifi_settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "wifi_settings",
+          "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10201811790466309,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730629.201717,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 29,
+      "verification_result": {
+        "verification_id": "verify_1753730629",
+        "timestamp": "2025-07-28T15:23:49.200573",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "wifi_settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "wifi_settings",
+            "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730629.2002308,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730629.2007449,
+        "duration": 0.0005140304565429688
+      },
+      "processing_time": 0.001493215560913086,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730629.810841,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 31,
+      "step_description": "Execute: toggle_wifi_on",
+      "execution_result": {
+        "success": true,
+        "action_type": "toggle",
+        "target": "Wi-Fi toggle",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "toggle",
+          "target": "Wi-Fi toggle",
+          "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10428595542907715,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730629.812667,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 31,
+      "verification_result": {
+        "verification_id": "verify_1753730629",
+        "timestamp": "2025-07-28T15:23:49.811010",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "toggle",
+          "target": "Wi-Fi toggle",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "toggle",
+            "target": "Wi-Fi toggle",
+            "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730629.811004,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730629.811092,
+        "duration": 8.797645568847656e-05
+      },
+      "processing_time": 0.001664876937866211,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730630.415405,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 32,
+      "step_description": "Execute: verify_activation",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify",
+        "target": "verify activation",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify",
+          "target": "verify activation",
+          "message": "Mock execution of verify on verify activation completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10217523574829102,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730630.416638,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 32,
+      "verification_result": {
+        "verification_id": "verify_1753730630",
+        "timestamp": "2025-07-28T15:23:50.415678",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify",
+          "target": "verify activation",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify",
+            "target": "verify activation",
+            "message": "Mock execution of verify on verify activation completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730630.415669,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730630.415812,
+        "duration": 0.0001430511474609375
+      },
+      "processing_time": 0.0009729862213134766,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730631.023181,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 33,
+      "step_description": "Execute: toggle_wifi_off",
+      "execution_result": {
+        "success": true,
+        "action_type": "toggle",
+        "target": "Wi-Fi toggle",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "toggle",
+          "target": "Wi-Fi toggle",
+          "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10175776481628418,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730631.023869,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 33,
+      "verification_result": {
+        "verification_id": "verify_1753730631",
+        "timestamp": "2025-07-28T15:23:51.023396",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "toggle",
+          "target": "Wi-Fi toggle",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "toggle",
+            "target": "Wi-Fi toggle",
+            "message": "Mock execution of toggle on Wi-Fi toggle completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730631.0233889,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730631.023461,
+        "duration": 7.224082946777344e-05
+      },
+      "processing_time": 0.0004830360412597656,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730631.626404,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 34,
+      "step_description": "Execute: verify_deactivation",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify deactivation",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify deactivation",
+          "message": "Mock execution of interact on verify deactivation completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10082292556762695,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730631.6271172,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 34,
+      "verification_result": {
+        "verification_id": "verify_1753730631",
+        "timestamp": "2025-07-28T15:23:51.626610",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify deactivation",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify deactivation",
+            "message": "Mock execution of interact on verify deactivation completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730631.6266031,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730631.6266959,
+        "duration": 9.274482727050781e-05
+      },
+      "processing_time": 0.0005168914794921875,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730632.236702,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 35,
+      "step_description": "Verify completion of: Test WiFi toggle functionality",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "wifi_settings_active",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "wifi_settings_active",
+          "message": "Mock execution of verify_subgoal_completion on wifi_settings_active completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10451388359069824,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730632.237854,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 35,
+      "verification_result": {
+        "verification_id": "verify_1753730632",
+        "timestamp": "2025-07-28T15:23:52.237005",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "wifi_settings_active",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "wifi_settings_active",
+            "message": "Mock execution of verify_subgoal_completion on wifi_settings_active completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730632.2369962,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730632.2371368,
+        "duration": 0.00014066696166992188
+      },
+      "processing_time": 0.0008640289306640625,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730632.841006,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 39,
+      "step_description": "Verify modal state for: Verify state persistence",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_modal_state",
+        "target": "wifi_settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_modal_state",
+          "target": "wifi_settings",
+          "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10121011734008789,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730632.842738,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 39,
+      "verification_result": {
+        "verification_id": "verify_1753730632",
+        "timestamp": "2025-07-28T15:23:52.841382",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_modal_state",
+          "target": "wifi_settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_modal_state",
+            "target": "wifi_settings",
+            "message": "Mock execution of verify_modal_state on wifi_settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730632.841373,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730632.8415282,
+        "duration": 0.0001552104949951172
+      },
+      "processing_time": 0.001371145248413086,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730633.4492989,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 41,
+      "step_description": "Execute: exit_settings",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "exit settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "exit settings",
+          "message": "Mock execution of interact on exit settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10386991500854492,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730633.4503071,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 41,
+      "verification_result": {
+        "verification_id": "verify_1753730633",
+        "timestamp": "2025-07-28T15:23:53.449545",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "exit settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "exit settings",
+            "message": "Mock execution of interact on exit settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730633.449537,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730633.449654,
+        "duration": 0.00011706352233886719
+      },
+      "processing_time": 0.0007748603820800781,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730634.058497,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 42,
+      "step_description": "Execute: re_enter_settings",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "re enter settings",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "re enter settings",
+          "message": "Mock execution of interact on re enter settings completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.105072021484375,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730634.059527,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 42,
+      "verification_result": {
+        "verification_id": "verify_1753730634",
+        "timestamp": "2025-07-28T15:23:54.058873",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "re enter settings",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "re enter settings",
+            "message": "Mock execution of interact on re enter settings completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730634.0588648,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730634.058995,
+        "duration": 0.00013017654418945312
+      },
+      "processing_time": 0.0006680488586425781,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730634.665719,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 43,
+      "step_description": "Execute: verify_state_maintained",
+      "execution_result": {
+        "success": true,
+        "action_type": "interact",
+        "target": "verify state maintained",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "interact",
+          "target": "verify state maintained",
+          "message": "Mock execution of interact on verify state maintained completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10096287727355957,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730634.668201,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 43,
+      "verification_result": {
+        "verification_id": "verify_1753730634",
+        "timestamp": "2025-07-28T15:23:54.666707",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "interact",
+          "target": "verify state maintained",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "interact",
+            "target": "verify state maintained",
+            "message": "Mock execution of interact on verify state maintained completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730634.6666691,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730634.667024,
+        "duration": 0.000354766845703125
+      },
+      "processing_time": 0.0016436576843261719,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730635.276187,
+      "agent": "ExecutorAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "execute_step",
+      "step_id": 44,
+      "step_description": "Verify completion of: Verify state persistence",
+      "execution_result": {
+        "success": true,
+        "action_type": "verify_subgoal_completion",
+        "target": "verified_state",
+        "error": null,
+        "details": {
+          "success": true,
+          "action": "verify_subgoal_completion",
+          "target": "verified_state",
+          "message": "Mock execution of verify_subgoal_completion on verified_state completed successfully",
+          "execution_time": 0.1
+        }
+      },
+      "processing_time": 0.10296082496643066,
+      "status": "success"
+    },
+    {
+      "timestamp": 1753730635.277299,
+      "agent": "VerifierAgent",
+      "session_id": "session_20250728_152342_settings_wifi",
+      "action": "verify_step",
+      "step_id": 44,
+      "verification_result": {
+        "verification_id": "verify_1753730635",
+        "timestamp": "2025-07-28T15:23:55.276499",
+        "planner_goal": "Test WiFi toggle functionality in Android settings with comprehensive verification",
+        "executor_result": {
+          "success": true,
+          "action_type": "verify_subgoal_completion",
+          "target": "verified_state",
+          "error": null,
+          "details": {
+            "success": true,
+            "action": "verify_subgoal_completion",
+            "target": "verified_state",
+            "message": "Mock execution of verify_subgoal_completion on verified_state completed successfully",
+            "execution_time": 0.1
+          }
+        },
+        "ui_state": {
+          "status": "success",
+          "ui_elements": [
+            {
+              "text": "Settings",
+              "bounds": [
+                0,
+                0,
+                100,
+                50
+              ],
+              "clickable": true
+            },
+            {
+              "text": "Wi-Fi",
+              "bounds": [
+                0,
+                100,
+                100,
+                150
+              ],
+              "clickable": true
+            },
+            {
+              "text": "ON",
+              "bounds": [
+                350,
+                100,
+                400,
+                150
+              ],
+              "clickable": true,
+              "switch": true
+            }
+          ],
+          "pixels": null
+        },
+        "start_time": 1753730635.27649,
+        "status": "failed",
+        "expectation_match": null,
+        "functional_bugs": [],
+        "heuristic_checks": {},
+        "llm_reasoning": {},
+        "replanning_required": false,
+        "confidence_score": 0.0,
+        "error": "'str' object has no attribute 'get'",
+        "end_time": 1753730635.2766268,
+        "duration": 0.00013685226440429688
+      },
+      "processing_time": 0.0008141994476318359,
+      "status": "success"
+    }
+  ],
+  "visual_trace": {
+    "enabled": true,
+    "trace_id": null,
+    "frame_count": 0,
+    "trace_duration": 0
+  },
+  "ai_analysis": null,
+  "metrics": {
+    "bug_detection_accuracy": {
+      "bugs_detected": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "agent_recovery_ability": {
+      "replanning_events": 0,
+      "recovery_attempts": 0,
+      "successful_recoveries": 0,
+      "recovery_success_rate": 0.0,
+      "adaptation_score": 0.0
+    },
+    "test_efficiency": {
+      "efficiency_score": 0.5,
+      "details": "No trace data available"
+    },
+    "coverage_completeness": {
+      "tested_features": [
+        "wifi_functionality",
+        "toggle_operations"
+      ],
+      "expected_features": [
+        "error_handling",
+        "toggle_operations",
+        "ui_responsiveness",
+        "state_persistence",
+        "wifi_functionality",
+        "app_navigation"
+      ],
+      "coverage_percentage": 33.33333333333333,
+      "missing_features": [
+        "state_persistence",
+        "error_handling",
+        "ui_responsiveness",
+        "app_navigation"
+      ]
+    }
+  },
+  "statistics": {
+    "total_test_steps": 19,
+    "passed_steps": 0,
+    "failed_steps": 19,
+    "total_agent_decisions": 39,
+    "unique_agents": 3,
+    "visual_frames_captured": 0,
+    "test_success_rate": 0.0
+  }
+}

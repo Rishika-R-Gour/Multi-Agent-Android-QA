@@ -1,0 +1,99 @@
+{
+  "evaluation_id": "comprehensive_eval_20250728_152535",
+  "timestamp": "2025-07-28T15:25:35.868458",
+  "data_summary": {
+    "supervisor_reports": 2,
+    "verifier_logs": 22,
+    "planner_logs": 2,
+    "qa_reports": 11
+  },
+  "bug_detection_accuracy": {
+    "aggregated_metrics": {
+      "average_precision": 0.0,
+      "average_recall": 0.0,
+      "average_f1_score": 0.0,
+      "total_verification_events": 22,
+      "total_bugs_detected": 0,
+      "high_confidence_detections": 0,
+      "high_confidence_rate": 0.0
+    },
+    "accuracy_trend": "needs_improvement",
+    "detection_reliability": "low"
+  },
+  "agent_recovery_ability": {
+    "recovery_metrics": {
+      "average_recovery_rate": 0.0,
+      "average_adaptation_score": 0.0,
+      "total_replanning_events": 2,
+      "successful_replannings": 2,
+      "replanning_success_rate": 100.0
+    },
+    "adaptation_capability": "needs_improvement",
+    "recovery_reliability": "low"
+  },
+  "supervisor_feedback_effectiveness": {
+    "recommendation_metrics": {
+      "total_recommendations": 0,
+      "high_priority_recommendations": 0,
+      "high_priority_rate": 0.0,
+      "prompt_improvements_suggested": 0,
+      "coverage_suggestions": 0
+    },
+    "performance_metrics": {
+      "average_processing_time": 0,
+      "reports_analyzed": 2
+    },
+    "effectiveness_score": 1.0,
+    "feedback_quality": "adequate"
+  },
+  "performance_trends": {
+    "success_rate_trend": {
+      "direction": "insufficient_data",
+      "values": [
+        0.0,
+        0.0
+      ],
+      "current_average": 0.0
+    },
+    "duration_trend": {
+      "direction": "insufficient_data",
+      "values": [
+        0,
+        0
+      ],
+      "current_average": 0
+    },
+    "detection_trend": {
+      "direction": "insufficient_data",
+      "values": [
+        0.0,
+        0.0
+      ],
+      "current_average": 0.0
+    },
+    "overall_trend": "declining"
+  },
+  "system_reliability": {
+    "reliability_metrics": {
+      "total_tests": 2,
+      "successful_tests": 1,
+      "system_reliability_percentage": 50.0,
+      "failure_types": {}
+    },
+    "stability_rating": "needs_improvement",
+    "reliability_trend": "concerning"
+  },
+  "recommendations": [
+    {
+      "category": "planning",
+      "priority": "medium",
+      "title": "Reduce replanning frequency",
+      "description": "High replanning frequency (2 events) indicates planning issues",
+      "actions": [
+        "Improve initial plan quality",
+        "Add better modal state prediction",
+        "Enhance error prevention strategies"
+      ]
+    }
+  ]
+}

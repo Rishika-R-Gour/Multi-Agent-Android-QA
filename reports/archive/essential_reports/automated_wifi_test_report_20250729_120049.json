@@ -1,0 +1,97 @@
+{
+  "test_session": {
+    "start_time": "2025-07-29T12:00:11.044497",
+    "test_type": "Automated WiFi Toggle Testing",
+    "device": "Pixel 6 Emulator (Android 13)"
+  },
+  "scenarios": [
+    {
+      "scenario_name": "Initial WiFi Status Check",
+      "goal": "Check current WiFi status and capture baseline screenshot",
+      "error": "'PlannerAgent' object has no attribute 'create_plan'",
+      "success": false,
+      "timestamp": "2025-07-29T12:00:14.387838"
+    },
+    {
+      "scenario_name": "WiFi Disable Test",
+      "goal": "Disable WiFi and verify it's turned off with UI validation",
+      "error": "'PlannerAgent' object has no attribute 'create_plan'",
+      "success": false,
+      "timestamp": "2025-07-29T12:00:18.240434"
+    },
+    {
+      "scenario_name": "WiFi Enable Test",
+      "goal": "Enable WiFi and verify it's turned on with UI validation",
+      "error": "'PlannerAgent' object has no attribute 'create_plan'",
+      "success": false,
+      "timestamp": "2025-07-29T12:00:22.327286"
+    },
+    {
+      "scenario_name": "Airplane Mode Integration Test",
+      "goal": "Test airplane mode toggle and WiFi interaction",
+      "error": "'PlannerAgent' object has no attribute 'create_plan'",
+      "success": false,
+      "timestamp": "2025-07-29T12:00:29.735163"
+    },
+    {
+      "scenario_name": "Rapid Toggle Stress Test",
+      "goal": "Perform rapid WiFi toggles to test system stability",
+      "error": "'PlannerAgent' object has no attribute 'create_plan'",
+      "success": false,
+      "timestamp": "2025-07-29T12:00:48.802670"
+    }
+  ],
+  "screenshots": [
+    {
+      "scenario": "initial_status",
+      "filename": "wifi_test_initial_status_20250729_120012.png",
+      "timestamp": "20250729_120012",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_initial_status_20250729_120012.png"
+    },
+    {
+      "scenario": "wifi_disabled",
+      "filename": "wifi_test_wifi_disabled_20250729_120017.png",
+      "timestamp": "20250729_120017",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_wifi_disabled_20250729_120017.png"
+    },
+    {
+      "scenario": "wifi_enabled",
+      "filename": "wifi_test_wifi_enabled_20250729_120021.png",
+      "timestamp": "20250729_120021",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_wifi_enabled_20250729_120021.png"
+    },
+    {
+      "scenario": "airplane_mode_on",
+      "filename": "wifi_test_airplane_mode_on_20250729_120024.png",
+      "timestamp": "20250729_120024",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_airplane_mode_on_20250729_120024.png"
+    },
+    {
+      "scenario": "airplane_mode_off",
+      "filename": "wifi_test_airplane_mode_off_20250729_120028.png",
+      "timestamp": "20250729_120028",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_airplane_mode_off_20250729_120028.png"
+    },
+    {
+      "scenario": "stress_test_final",
+      "filename": "wifi_test_stress_test_final_20250729_120048.png",
+      "timestamp": "20250729_120048",
+      "path": "/Users/rishikagour/QualGent_QA/wifi_test_stress_test_final_20250729_120048.png"
+    }
+  ],
+  "performance_metrics": {
+    "total_test_duration": 37.76,
+    "scenarios_completed": 5,
+    "screenshots_captured": 6,
+    "success_rate": 0.0,
+    "average_scenario_duration": 0.0
+  },
+  "summary": {
+    "test_completion_time": "2025-07-29T12:00:48.802717",
+    "total_scenarios": 5,
+    "successful_scenarios": 0,
+    "failed_scenarios": 5,
+    "final_wifi_status": "enabled",
+    "test_status": "COMPLETED SUCCESSFULLY"
+  }
+}
