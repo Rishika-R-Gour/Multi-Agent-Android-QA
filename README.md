@@ -148,35 +148,6 @@ python evaluation_report_generator.py
 - **Reports**: `reports/` directory (JSON + Markdown)
 - **Documentation**: `docs/` directory
 
-<<<<<<< HEAD
-## 📸 Visual Results & Demo
-
-### 🎯 Live System in Action
-
-![Android Studio Integration](screenshots/key_android_studio_demo.png)
-*Real Android Studio emulator integration with Pixel 6 device*
-
-### 🔥 WiFi Testing Success (100% Pass Rate)
-
-<div align="center">
-
-| Initial Status | WiFi Disabled | WiFi Enabled |
-|----------------|---------------|---------------|
-| ![Initial WiFi Status](screenshots/key_wifi_initial_status.png) | ![WiFi Disabled](screenshots/key_wifi_disabled.png) | ![WiFi Enabled](screenshots/key_wifi_enabled.png) |
-| ✅ Baseline verification | ✅ Successfully disabled | ✅ Successfully enabled |
-
-</div>
-
-### 📊 Latest Test Run Evidence
-
-**Date**: July 29, 2025 | **Success Rate**: 100% (5/5 scenarios) | **Execution Time**: 19.1 seconds
-
-![Latest WiFi Test - Initial](screenshots/organized/latest_wifi_test/wifi_test_initial_status_20250729_120149.png)
-![Latest WiFi Test - Disabled](screenshots/organized/latest_wifi_test/wifi_test_wifi_disabled_20250729_120212.png)
-![Latest WiFi Test - Enabled](screenshots/organized/latest_wifi_test/wifi_test_wifi_enabled_20250729_120234.png)
-
-*Automated WiFi testing sequence showing complete test cycle*
-
 ### 🚀 Key Achievements Demonstrated
 
 - ✅ **Real Device Automation**: Android Studio emulator control
